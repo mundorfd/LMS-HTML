@@ -1,1 +1,1 @@
-# OSU Git Repo
+# OSU Ecampus Git Repo
