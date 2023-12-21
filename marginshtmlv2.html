@@ -1,0 +1,61 @@
+<div style="width: 98%; max-width: 1000px;">
+
+    <!-- Section: Overview of Inline Margin Settings -->
+    <h2 id="overview" style="color: #ffffff; background-color: #004225; font-size: 18pt; margin-top: 50px; margin-bottom: 20px; padding: 7px;">Inline Margin Settings in Canvas LMS</h2>
+    <p>This is an overview of how to set the <code style="color: black; background-color: #eeeeff;">margin</code> property in Canvas LMS. It discusses various units like <code style="color: black; background-color: #eeeeff;">px</code>, and <code style="color: black; background-color: #eeeeff;">em</code>, as well as special values. There is also an explanation of using individual margin properties and using the shorthand notation.</p>
+    <p>The <code style="color: black; background-color: #EEEEFF;">margin</code> property in inline styles (a.k.a inline CSS) can be defined using one to four values. These can be a length (like <code style="color: black; background-color: #EEEEFF;">px</code>, <code style="color: black; background-color: #EEEEFF;">em</code>, a percentage (<code style="color: black; background-color: #EEEEFF;">%</code>), or the keyword <code style="color: black; background-color: #EEEEFF;">auto</code>. You can also use negative values.</p>
+    <!-- Section: Individual Properties vs. Shorthand -->
+    <h2 id="individual-vs-shorthand" style="color: #ffffff; background-color: #004225; font-size: 18pt; margin-top: 50px; margin-bottom: 20px; padding: 7px;">Specifying Margin: Individual Properties vs. Shorthand</h2>
+    
+    <!-- Subsection: Individual Properties -->
+    <h3 style="border-bottom: 1px solid #e6e7e8; font-size: 16pt; margin-top: 12px; margin-bottom: 12px;">Individual Properties</h3>
+    <p>Individual properties like <code style="color: black; background-color: #EEEEFF;">margin-top</code>, <code style="color: black; background-color: #EEEEFF;">margin-right</code>, <code style="color: black; background-color: #EEEEFF;">margin-bottom</code>, and <code style="color: black; background-color: #EEEEFF;">margin-left</code> allow you to set the margin for each side separately.</p>
+    <h4><strong>Syntax</strong></h4>
+
+    <p><code style="color: black; background-color: #eeeeff;">margin-top: [value]; margin-right: [value]; margin-bottom: [value]; margin-left: [value];</code></p>
+    <h4><strong>Advantages</strong></h4>
+
+    <dl>
+      <dt>Specificity</dt>
+      <dd>Target only the side you want to adjust.</dd>
+      <dt>Readability</dt>
+      <dd>Easily identify which side has a margin.</dd>
+    </dl>
+    <h4><strong>Example</strong></h4>
+
+    
+    <pre style="color: black; background-color: #EEEEFF;">&lt;div style="margin-top: 10px; margin-right: 20px; margin-bottom: 30px; margin-left: 40px;"&gt;Content&lt;/div&gt;</pre>
+    
+    <!-- Subsection: Shorthand Notation -->
+    <h3 style="border-bottom: 1px solid #e6e7e8; font-size: 16pt; margin-top: 12px; margin-bottom: 12px;">Shorthand Notation</h3>
+    <p>Use one property for all sides. Shorthand is quicker, especially when setting margins for more than one side.</p>
+    <dl>
+      <dt>One Value</dt>
+      <dd>Applies to all sides: <code style="color: black; background-color: #EEEEFF;">&lt;div style="margin:10px;"&gt;Content&lt;/div&gt;</code></dd>
+      <dt>Two Values</dt>
+      <dd>First for top/bottom, second for left/right: <code style="color: black; background-color: #EEEEFF;">&lt;div style="margin:10px 20px;"&gt;Content&lt;/div&gt;</code></dd>
+      <dt>Three Values</dt>
+      <dd>Top, left/right, bottom: <code style="color: black; background-color: #EEEEFF;">&lt;div style="margin:10px 20px 30px;"&gt;Content&lt;/div&gt;</code></dd>
+      <dt>Four Values</dt>
+      <dd>Top, right, bottom, left: <code style="color: black; background-color: #EEEEFF;">&lt;div style="margin:10px 20px 30px 40px;"&gt;Content&lt;/div&gt;</code></dd>
+    </dl>
+  
+    <!-- Section: When to Use Different Values -->
+    <h2 id="when-to-use" style="color: #ffffff; background-color: #004225; font-size: 18pt; margin-top: 50px; margin-bottom: 20px; padding: 7px;">When to Use Different Values for Margin in Canvas LMS</h2>
+    <dl>
+      <dt>Length Units (<code style="color: black; background-color: #eeeeff;">px</code>, <code style="color: black; background-color: #eeeeff;">em</code>)</dt>
+      <dd>For fixed sizes.</dd>
+      <dt>Percentage (%)</dt>
+      <dd>For scaling with the parent.</dd>
+      <dt>Keyword auto</dt>
+      <dd>For auto-calculating margins.</dd>
+    </dl>
+    <h3 style="border-bottom: 1px solid #e6e7e8; font-size: 12pt; margin-top: 12px; margin-bottom: 12px;">Negative Values</h3>
+
+
+    <p>Negative Values are used to reduce the distance between the element and its neighbors</p>
+    <h4><strong>Example</strong></h4>
+
+     <p><code style="color: black; background-color: #EEEEFF;">margin-top: -10px;</code></p>
+
+<p style="background: whitesmoke; border-left: 6px solid #004225; color: #2D3B45; padding: 15px; margin: 20px 0 25px 0;"><strong>Note:</strong> You should always test these values within Canvas LMS to confirm support for your syntax.</p>
