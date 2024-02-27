@@ -1,0 +1,136 @@
+    <div style="width: 98%; max-width: 1000px;">
+            <h2 id="whatis" style="color: #ffffff; background-color: #004225; font-size: 18pt; margin-top: 50px; margin-bottom: 20px; padding: 7px;">Inline Margin Settings in Canvas LMS</h2>
+        <p>This is an overview of specifying the <code style="color: black; background-color: #EEEEFF;">margin</code> property using inline styles in Canvas LMS. It covers shorthand and individual properties, different units like <code style="color: black; background-color: #EEEEFF;">px</code>, <code style="color: black; background-color: #EEEEFF;">em</code>, <code style="color: black; background-color: #EEEEFF;">rem</code>, and special values such as percentages and negative margins.</p>
+
+        <p>The <code style="color: black; background-color: #EEEEFF;">margin</code> property in inline styles (a.k.a inline CSS) can be defined using one to four values. These can be a length (like <code style="color: black; background-color: #EEEEFF;">px</code>, <code style="color: black; background-color: #EEEEFF;">em</code>, <code style="color: black; background-color: #EEEEFF;">rem</code>), a percentage (<code style="color: black; background-color: #EEEEFF;">%</code>), or the keyword <code style="color: black; background-color: #EEEEFF;">auto</code>. You can also use negative values.</p>
+            <h2 id="whatis" style="color: #ffffff; background-color: #004225; font-size: 18pt; margin-top: 50px; margin-bottom: 20px; padding: 7px;">Specifying Margin: Individual Properties vs. Shorthand</h2>
+        <h3 style="border-bottom: 1px solid #e6e7e8; font-size: 16pt; margin-top: 12px; margin-bottom: 12px;">Individual Properties</h3>
+        <p>Individual properties like <code>margin-top</code>, <code>margin-right</code>, <code>margin-bottom</code>, and <code>margin-left</code> allow you to set the margin for each side separately.</p>
+
+        <p><strong>Syntax</strong>: <code style="color: black; background-color: #EEEEFF;">margin-top: [value]; margin-right: [value]; margin-bottom: [value]; margin-left: [value];</code></p>
+      
+        <h3 style="border-bottom: 1px solid #e6e7e8; font-size: 12pt; margin-top: 12px; margin-bottom: 12px;”><strong>Advantages</strong></h3>
+
+
+        <p>Individual properties like <code style="color: black; background-color: #EEEEFF;">margin-top</code>, <code style="color: black; background-color: #EEEEFF;">margin-right</code>, <code style="color: black; background-color: #EEEEFF;">margin-bottom</code>, and <code style="color: black; background-color: #EEEEFF;">margin-left</code> may offer some advantages:</p>
+        <dl>
+            <dt>Specificity</dt>
+            <dd>You can target only the side you want to adjust without affecting others.</dd>
+          
+            <dt>Readability</dt>
+            <dd>Easier to determine which side of an object has a margin specification.</dd>
+          
+            <dt>Example</dt>
+            <dd><pre><code class="language-html">&lt;div style=&quot;margin-top: 10Px; Margin-Right: 20Px; Margin-Bottom: 30Px; Margin-Left: 40Px;&quot;&gt;Content&lt;/div&gt;
+            </code></pre></dd>
+          </dl>
+    
+        <h3 style="border-bottom: 1px solid #e6e7e8; font-size: 16pt; margin-top: 12px; margin-bottom: 12px;">Shorthand Notation</h3>
+        <p>Specifying all margins with one property. Shorthand is quicker but applies to all sides. Individual properties offer greater control over each side.</p>
+        <p><strong>Syntax</strong>: <code style="color: black; background-color: #EEEEFF;">margin: [top] [right] [bottom] [left];</code>
+        <strong>Example</strong>: <code style="color: black; background-color: #EEEEFF;">margin: 10px 20px 30px 40px;</code></p>
+        <h4 style="font-size: 14pt; margin-top: 12px; margin-bottom: 12px;">Additional Examples</h4>
+                <h2 id="whatis" style="color: #ffffff; background-color: #004225; font-size: 18pt; margin-top: 50px; margin-bottom: 20px; padding: 7px;">Inline Margin Settings in Canvas LMS</h2>
+            <p>This is an overview of specifying the <code style="color: black; background-color: #EEEEFF;">margin</code> property using inline styles in Canvas LMS. It covers shorthand and individual properties, different units like <code style="color: black; background-color: #EEEEFF;">px</code>, <code style="color: black; background-color: #EEEEFF;">em</code>, <code style="color: black; background-color: #EEEEFF;">rem</code>, and special values such as percentages and negative margins.</p>
+             
+                <h2 id="whatis" style="color: #ffffff; background-color: #004225; font-size: 18pt; margin-top: 50px; margin-bottom: 20px; padding: 7px;">Specifying Margin: Individual Properties vs. Shorthand</h2>
+            <h3 style="border-bottom: 1px solid #e6e7e8; font-size: 16pt; margin-top: 12px; margin-bottom: 12px;">Individual Properties</h3>
+            <p>Individual Properties name each margin side as its own property.</p>
+            <p><strong>Syntax</strong>: <code style="color: black; background-color: #EEEEFF;">margin-top: [value]; margin-right: [value]; margin-bottom: [value]; margin-left: [value];</code></p>
+            <p>Individual properties may offer some advantages:</p>
+            <dl>
+                <dt>Specificity</dt>
+                <dd>You can target only the side you want to adjust without affecting others.</dd>
+              
+                <dt>Readability</dt>
+                <dd>Easier to determine which side of an object has a margin specification.</dd>
+               </dl>
+               <h4><strong>Example</strong></h4>
+
+            <pre><code class="language-html">&lt;div style=&quot;margin-top: 10Px; Margin-Right: 20Px; Margin-Bottom: 30Px; Margin-Left: 40Px;&quot;&gt;Content&lt;/Div&gt;
+            </code></pre>
+            <h3 style="border-bottom: 1px solid #e6e7e8; font-size: 16pt; margin-top: 12px; margin-bottom: 12px;">Shorthand Notation</h3>
+            <p>Specifying all margins with one property. Shorthand is quicker but applies to all sides</p>
+            <p><strong>Syntax</strong>: <code style="color: black; background-color: #EEEEFF;">margin: [top] [right] [bottom] [left];</code>
+            <strong>Example</strong>: <code style="color: black; background-color: #EEEEFF;">margin: 10px 20px 30px 40px;</code></p>
+            <h4 style="font-size: 14pt; margin-top: 12px; margin-bottom: 12px;">Additional Examples</h4>
+            <dl>
+                <dt>One Value</dt>
+                <dd>When one value is specified, it applies to all four sides.
+                  <pre><code>&lt;div style="margin:10px;"&gt;Content&lt;/div&gt;</code></pre>
+                </dd>
+              
+                <dt>Two Values</dt>
+                <dd>The first value is for the top and bottom margins, and the second one is for the left and right margins.
+                  <pre><code>&lt;div style="margin:10px 20px;"&gt;Content&lt;/div&gt;</code></pre>
+                </dd>
+              
+                <dt>Three Values</dt>
+                <dd>The first value is for the top, the second one for the left and right, and the third one for the bottom.
+                  <pre><code>&lt;div style="margin:10px 20px 30px;"&gt;Content&lt;/div&gt;</code></pre>
+                </dd>
+              
+                <dt>Four Values</dt>
+                <dd>Values apply to the top, right, bottom, and left margins in that order.
+                  <pre><code>&lt;div style="margin:10px 20px 30px 40px;"&gt;Content&lt;/div&gt;</code></pre>
+                </dd>
+              </dl>
+                <h2 id="whatis" style="color: #ffffff; background-color: #004225; font-size: 18pt; margin-top: 50px; margin-bottom: 20px; padding: 7px;">When to Use Different Values for Margin in Canvas LMS</h2>
+            <h5>Length Units (<code style="color: black; background-color: #EEEEFF;">px</code>, <code style="color: black; background-color: #EEEEFF;">em</code> )</h5>
+            <dl>
+                <dt>Fixed</dt>
+                <dd>When you want a fixed size regardless of parent or browser settings.</dd>
+                <dd><code style="color: black; background-color: #EEEEFF;">margin-top: 10px;</code></dd>
+              
+                <dt>Percentage (%)</dt>
+                <dd>When you want the margin to scale with the parent element's size.</dd>
+                <dd><code style="color: black; background-color: #EEEEFF;">margin-top: 5%;</code></dd>
+              
+                <dt>Keyword auto</dt>
+                <dd>To auto-calculate margins, often used for horizontal centering.</dd>
+                <dd><code style="color: black; background-color: #EEEEFF;">margin: auto;</code></dd>
+              </dl>
+              
+            <h5>Negative Values</h5>
+           <p>Negative Values are used to reduce the distance between the element and its neighbors</p>
+
+            <p><strong>Example</strong>: <code style="color: black; background-color: #EEEEFF;">margin-top: -10px;</code></p>
+           
+                <h2 id="whatis" style="color: #ffffff; background-color: #004225; font-size: 18pt; margin-top: 50px; margin-bottom: 20px; padding: 7px;">Understanding <code style="color: black; background-color: #EEEEFF;">em</code> in CSS</h2>
+            <ul>
+            <li><strong>Relative</strong>: 1 <code style="color: black; background-color: #EEEEFF;">em</code> is equal to the font size of the element itself.</li>
+            <li><strong>Inherited</strong>: If not set, takes the parent element&#39;s font size.</li>
+            <li><strong>Use Case</strong>: When you want scalable spacing tied to the element&#39;s font size.</li>
+            </ul>
+            <p><strong><code style="color: black; background-color: #EEEEFF;">em</code></strong> is useful for creating responsive designs.</p>
+            </div>
+            <h2 id="whatis" style="color: #ffffff; background-color: #004225; font-size: 18pt; margin-top: 50px; margin-bottom: 20px; padding: 7px;">When to Use Different Values for Margin in Canvas LMS</h2>
+        <h5>Length Units (<code style="color: black; background-color: #EEEEFF;">px</code>, <code style="color: black; background-color: #EEEEFF;">em</code> )</h5>
+        <ul>
+        <li><strong>Fixed</strong>: When you want a fixed size regardless of parent or browser settings.</li>
+        <li><strong>Example</strong>: <code style="color: black; background-color: #EEEEFF;">margin-top: 10px;</code></li>
+        </ul>
+        <h5>Percentage (<code style="color: black; background-color: #EEEEFF;">%</code>)</h5>
+        <ul>
+        <li><strong>Responsive</strong>: When you want the margin to scale with the parent element&#39;s size.</li>
+        <li><strong>Example</strong>: <code style="color: black; background-color: #EEEEFF;">margin-top: 5%;</code></li>
+        </ul>
+        <h5>Keyword <code style="color: black; background-color: #EEEEFF;">auto</code></h5>
+        <ul>
+        <li><strong>Centering</strong>: To auto-calculate margins, often used for horizontal centering.</li>
+        <li><strong>Example</strong>: <code style="color: black; background-color: #EEEEFF;">margin: auto;</code></li>
+        </ul>
+        <h5>Negative Values</h5>
+        <ul>
+        <li><strong>Overlap</strong>: Reduce the distance between the element and its neighbors</li>
+        <li><strong>Example</strong>: <code style="color: black; background-color: #EEEEFF;">margin-top: -10px;</code></li>
+        </ul>
+            <h2 id="whatis" style="color: #ffffff; background-color: #004225; font-size: 18pt; margin-top: 50px; margin-bottom: 20px; padding: 7px;">Understanding <code style="color: black; background-color: #EEEEFF;">em</code> in CSS</h2>
+        <ul>
+        <li><strong>Relative</strong>: 1 <code style="color: black; background-color: #EEEEFF;">em</code> is equal to the font size of the element itself.</li>
+        <li><strong>Inherited</strong>: If not set, takes the parent element&#39;s font size.</li>
+        <li><strong>Use Case</strong>: When you want scalable spacing tied to the element&#39;s font size.</li>
+        </ul>
+        <p><strong><code style="color: black; background-color: #EEEEFF;">em</code></strong> is useful for creating responsive designs.</p>
+        <p>Always test these values within Canvas LMS for compatibility.</p>
+        </div>
