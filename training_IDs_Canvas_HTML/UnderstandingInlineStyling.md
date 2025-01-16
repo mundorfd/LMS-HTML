@@ -23,7 +23,7 @@ In a proper theater production (separate HTML and CSS), the **set designer (CSS)
 
 ## Title: The Marketplace Scene (An "Inline Style" Production)**  
 
-![](./images/theater.png)
+![A theater playhouse. On stage is a fruit stand with two vendors conversing](./images/theater.png)
 
 Mundorff, D. (2025). *A theater scene with two female actors conversing at a fruit stand; one in a tattered tunic, the other in a blue cloak* [Digital image]. MidJourney. https://cdn.midjourney.com/95693a77-7fbc-47ba-a1af-8b256838d1ab/0_1.png  
 
