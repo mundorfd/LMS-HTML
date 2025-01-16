@@ -1,0 +1,284 @@
+<h2>Add a Star Rating</h2>
+
+
+<div class="star-rating">
+  <input type="radio" id="star5" name="rating" value="5">
+  <label for="star5">test</label>
+  </div>
+
+  <h2>Create a Slider</h2>
+
+<input type="range" min="1" max="100" value="50" class="slider" id="mySlider">
+<p>Value: <span id="sliderValue"></span></p>
+<script>
+  var slider = document.getElementById("mySlider");
+  var output = document.getElementById("sliderValue");
+  output.innerHTML = slider.value;
+  slider.oninput = function() {
+    output.innerHTML = this.value;
+  }
+</script>
+
+<h2>Add a PDF Document</h2>
+
+
+<embed src="document.pdf" type="application/pdf" width="100%" height="600px">
+
+    <h2>Create a Countdown Timer</h2>
+
+
+<div id="countdown"></div>
+<script>
+  var countDownDate = new Date("Jan 1, 2024 00:00:00").getTime();
+  var x = setInterval(function() {
+    var now = new Date().getTime();
+    var distance = countDownDate - now;
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    document.getElementById("countdown").innerHTML = "Countdown: " + days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("countdown").innerHTML = "EXPIRED";
+    }
+  }, 1000);
+</script>
+
+<h2>Add Quiz with Radio Buttons</h2>
+
+
+<form>
+  <h3>Question 1:</h3>
+  <input type="radio" name="question1" value="option1">Option 1<br>
+  <input type="radio" name="question1" value="option2">Option 2<br>
+  <input type="radio" name="question1" value="option3">Option 3<br>
+  <input type="radio" name="question1" value="option4">Option 4<br>
+  <br>
+  <h3>Question 2:</h3>
+  <input type="radio" name="question2" value="option1">Option 1<br>
+  <input type="radio" name="question2" value="option2">Option 2<br>
+  <input type="radio" name="question2" value="option3">Option 3<br>
+  <input type="radio" name="question2" value="option4">Option 4<br>
+  <br>
+  <!-- Add more questions as needed -->
+  <input type="submit" value="Submit">
+</form>
+
+<h2>Create Collapsible Accordion</h2>
+
+
+<div class="accordion">
+  <div class="accordion-item">
+    <input type="checkbox" id="accordion-item-1" class="accordion-item-toggle">
+    <label for="accordion-item-1" class="accordion-item-title">Accordion Item 1</label>
+    <div class="accordion-item-content">
+      <!-- Content for Accordion Item 1 goes here -->
+    </div>
+  </div>
+  <div class="accordion-item">
+    <input type="checkbox" id="accordion-item-2" class="accordion-item-toggle">
+    <label for="accordion-item-2" class="accordion-item-title">Accordion Item 2</label>
+    <div class="accordion-item-content">
+      <!-- Content for Accordion Item 2 goes here -->
+    </div>
+  </div>
+  <!-- Add more accordion items as needed -->
+</div>
+
+<h2>Add a Drag-and-Drop Activity</h2>
+
+
+<div id="drag-container">
+  <div id="drag-1" draggable="true">Drag me</div>
+
+  <h2>Embed a Google Drive Folder</h2>
+
+
+<iframe src="https://drive.google.com/embeddedfolderview?id=FOLDER_ID#list" width="100%" height="600" frameborder="0"></iframe>
+
+<h2>Add a Tooltip</h2>
+
+
+<span class="tooltip">Hover over me<span class="tooltiptext">Tooltip content goes here</span></span>
+<style>
+  .tooltip {
+    position: relative;
+    cursor: pointer;
+  }
+  .tooltiptext {
+    visibility: hidden;
+    width: 150px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 4px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+</style>
+
+#16. Create a Modal Popup
+
+<button onclick="openModal()">Open Modal</button>
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <p>Modal content goes here</p>
+  </div>
+</div>
+<script>
+  function openModal() {
+    document.getElementById('myModal').style.display = 'block';
+  }
+  function closeModal() {
+    document.getElementById('myModal').style.display = 'none';
+  }
+</script>
+
+<h2>Embed a Google Slides Presentation</h2>
+
+
+<iframe src="https://docs.google.com/presentation/d/e/PRESENTATION_ID/embed?start=true&loop=true&delayms=5000" width="100%" height="600" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+<h2>Create a Responsive Image Gallery</h2>
+
+
+<div class="image-gallery">
+  <div class="image-item">
+    <img src="image1.jpg" alt="Image 1">
+    <div class="image-caption">Image 1 Caption</div>
+  </div>
+  <div class="image-item">
+    <img src="image2.jpg" alt="Image 2">
+    <div class="image-caption">Image 2 Caption</div>
+  </div>
+  <div class="image-item">
+    <img src="image3.jpg" alt="Image 3">
+    <div class="image-caption">Image 3 Caption</div>
+  </div>
+  <!-- Add more image items as needed -->
+</div>
+
+<h2>Embed an Audio File</h2>
+
+
+<audio controls>
+  <source src="audio.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<h2>Add a Table</h2>
+
+
+<table>
+  <tr>
+    <th>Header 1</th>
+    <th>Header 2</th>
+  </tr>
+  <tr>
+    <td>Row 1, Cell 1</td>
+    <td>Row 1, Cell 2</td>
+  </tr>
+  <tr>
+    <td>Row 2, Cell 1</td>
+    <td>Row 2, Cell 2</td>
+  </tr>
+</table>
+
+<h2>Create a Progress Bar</h2>
+
+
+<div style="width: 100%; background-color: #e0e0e0;">
+  <div style="width: 50%; background-color: #2196f3; height: 10px;"></div>
+</div>
+
+<h2>Embed a Google Form</h2>
+
+
+<iframe src="https://drive.google.com/embeddedfolderview?id=FOLDER_ID#list" width="100%" height="600" frameborder="0"></iframe>
+<h2>Add a Webcam or Microphone Recorder</h2>
+
+
+<video autoplay></video>
+<button onclick="startRecording()">Start Recording</button>
+<button onclick="stopRecording()">Stop Recording</button>
+<script>
+  const videoElement = document.querySelector('video');
+  let mediaRecorder;
+
+  function startRecording() {
+    navigator.mediaDevices.getUserMedia({ video: true, audio: true })
+      .then((stream) => {
+        videoElement.srcObject = stream;
+        mediaRecorder = new MediaRecorder(stream);
+        mediaRecorder.start();
+      })
+      .catch((error) => {
+        console.error('Error accessing webcam/microphone:', error);
+      });
+  }
+
+  function stopRecording() {
+    mediaRecorder.stop();
+    videoElement.srcObject.getTracks().forEach(track => track.stop());
+  }
+</script>
+
+<h2>Embed a Virtual Reality (VR) Experience</h2>
+
+
+<iframe src="https://vr.example.com/vrexperience" width="100%" height="600" frameborder="0"></iframe>
+
+<h2>Add a Custom Font</h2>
+
+
+<style>
+  @font-face {
+    font-family: 'CustomFont';
+    src: url('customfont.ttf') format('truetype');
+  }
+  body {
+    font-family: 'CustomFont', sans-serif;
+  }
+</style>
+
+<h2>Embed an Interactive Google Map</h2>
+
+
+<iframe src="https://www.google.com/maps/d/u/0/embed?mid=MAP_ID" width="100%" height="480"></iframe>
+
+<h2>Add a Twitter Widget</h2>
+
+
+<a class="twitter-timeline" href="https://twitter.com/TWITTER_HANDLE?ref_src=twsrc%5Etfw">Tweets by TWITTER_HANDLE</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<h2>Add an Interactive Quiz</h2>
+
+
+<iframe src="https://docs.google.com/forms/d/e/FORM_ID/viewform?embedded=true" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+<h2>Embed a PDF Document</h2>
+
+
+<embed src="document.pdf" type="application/pdf" width="100%" height="600px">
+
+    <h2>Embed a YouTube Video</h2>
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h2>Create a Responsive Image</h2>
+
+
+<iframe src="https://docs.google.com/forms/d/e/FORM_ID/viewform?embedded=true" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+

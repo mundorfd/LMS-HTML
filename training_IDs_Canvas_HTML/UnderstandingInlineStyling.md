@@ -1,6 +1,6 @@
 # An introduction to HTML and inline styling
 
-A common metaphor is to think of **HTML, CSS, and JavaScript** as parts of a theater production:  
+A a theater production as a metaphor of **HTML, CSS, and JavaScript**:
 
 - **HTML** is the script: it defines the structure and content of the play, specifying what scenes exist and what characters will say.  
 - **CSS** is the set design and costumes: it determines how everything looks, from the colors and textures of the backdrop to the outfits of the characters.  
