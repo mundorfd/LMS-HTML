@@ -1,10 +1,20 @@
-# An introduction to HTML and inline styling
+# An introduction to HTML and Canvas inline styling
 
-A a theater production as a metaphor of **HTML, CSS, and JavaScript**:
+## Working Subtitles
+
+- _Like writing stage directions into every line_
+- _When best practices meet reality_
+- _Canvas won’t let us have nice things—so here we are._  
+- _The 'we told you not to' guide to Canvas styling._  
+- _It’s only weird if it doesn't work_
+- _Because sometimes you just gotta do what you gotta do._  
+
+
+A theater production as a metaphor for **HTML, CSS, and JavaScript**:
 
 - **HTML** is the script: it defines the structure and content of the play, specifying what scenes exist and what characters will say.  
-- **CSS** is the set design and costumes: it determines how everything looks, from the colors and textures of the backdrop to the outfits of the characters.  
-- **JavaScript** is the director: it adds the dynamic actions and interactivity, deciding how the characters move, respond, or react during the performance.  
+- **CSS** is the set design and costumes: it determines how everything looks, from the colors and textures of the backdrop to the characters' outfits.  
+- **JavaScript** is the director: it adds dynamic actions and interactivity, deciding how the characters move, respond, or react during the performance.  
 
 Together, they create a complete and engaging show.
 
@@ -13,15 +23,20 @@ Using the theater metaphor, writing HTML and CSS in **Canvas with inline styles*
 - The **script (HTML)** and the **set design (CSS)** are written directly into the actor's lines.  
 - Instead of having a dedicated set designer (CSS) to manage and coordinate the visuals for the entire stage, each actor (HTML element) has their costumes and props defined individually, piece by piece, in the script itself.  
 
+## Inline Styling
+
+![html_tags](./images/html_tags.png)
+
+
 This approach is less efficient because:
 
 1. **Redundancy**: Every actor (HTML element) has to repeat their costume details, even if several actors wear similar outfits.  
 2. **Lack of scalability**: Making changes becomes labor-intensive because you need to update each individual actor’s lines instead of simply changing one centralized design plan.  
-3. **Limited flexibility**: It's harder to adapt or reuse designs since the styles are tightly coupled with the content.
+3. **Limited flexibility**: Adapting or reusing designs is more challenging since the styles are tightly coupled with the content.
 
-In a proper theater production (separate HTML and CSS), the **set designer (CSS)** can define costumes and stage elements once, and all actors (HTML) can reference them, making the production easier to scale and maintain. Using inline styles in Canvas essentially forces you to juggle both roles directly in the script, which can limit creative control and efficiency.
+In a proper theater production (separate HTML and CSS), the **set designer (CSS)** can define costumes and stage elements once. All actors (HTML) can reference them, making the production easier to scale and maintain. Using inline styles in Canvas forces you to juggle both roles directly in the script, limiting creative control and efficiency.
 
-## Title: The Marketplace Scene (An "Inline Style" Production)**  
+## Title: The Marketplace Scene (An "Inline Style" Production)
 
 ![A theater playhouse. On stage is a fruit stand with two vendors conversing](./images/theater.png)
 
@@ -60,8 +75,8 @@ Mundorff, D. (2025). *A theater scene with two female actors conversing at a fru
 
 ---
 
-### Analysis:
+### Analysis
 
-In this script, every detail about **lighting**, **costumes**, **effects**, and even **set design** is described within the dialogue and stage directions for each actor, mimicking the inefficiencies of inline styles in Canvas HTML. It’s clear, but unwieldy, verbose, hard to read, and repetitive. This is much like mixing structure and styling directly in the same place, or like inline CSS cluttering an HTML file.  
+In this script, every detail about **lighting**, **costumes**, **effects**, and even **set design** is described within each actor's dialogue and stage directions, mimicking the inefficiencies of inline styles in Canvas HTML. It’s clear but unwieldy, verbose, hard to read, and repetitive. This is like mixing structure and styling directly in the same place or inline CSS cluttering an HTML file.  
 
-- Any updates to the costume or set would require manual editing of every repeated description, increasing the likelihood of inconsistency.
+Any updates to the costume or set would require manual editing of every repeated description, increasing the likelihood of inconsistency.

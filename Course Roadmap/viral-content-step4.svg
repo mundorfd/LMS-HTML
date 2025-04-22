@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240">
+  <!-- 
+    CUSTOMIZATION GUIDE:
+    - Main colors you may want to change:
+      - Active step color: #ec008c (bright pink)
+      - Completed steps color: #555555 (dark gray) - CONSISTENT across all steps
+      - Inactive step color: #cbd5e0 (light gray)
+      - Progress line color: #555555 (dark gray) - CONSISTENT across all steps
+      - Background color: #ffffff (white)
+      - Detail box background: #fde8f4 (light pink)
+      - Detail box border: #FAFDFD (lighter blue)
+  -->
+  
+  <!-- Background -->
+  <rect width="800" height="240" fill="#ffffff" rx="8" ry="8"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#ec008c">Viral Content Creation Process</text>
+  
+  <!-- Connection line - gray background line -->
+  <line x1="100" y1="90" x2="700" y2="90" stroke="#555555" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Progress line - consistent gray color -->
+  <line x1="100" y1="90" x2="460" y2="90" stroke="#555555" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Step 1 (Completed) - Gray outline circle -->
+  <circle cx="100" cy="90" r="20" fill="white" stroke="#555555" stroke-width="2"/>
+  <text x="100" y="95" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#555555">1</text>
+  <text x="100" y="125" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#555555">Content Creation</text>
+  <text x="100" y="140" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#555555">Strategy</text>
+  
+  <!-- Step 2 (Completed) - Gray outline circle -->
+  <circle cx="220" cy="90" r="20" fill="white" stroke="#555555" stroke-width="2"/>
+  <text x="220" y="95" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#555555">2</text>
+  <text x="220" y="125" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#555555">Triggers</text>
+  
+  <!-- Step 3 (Completed) - Gray outline circle -->
+  <circle cx="340" cy="90" r="20" fill="white" stroke="#555555" stroke-width="2"/>
+  <text x="340" y="95" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#555555">3</text>
+  <text x="340" y="125" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#555555">Emotion</text>
+  
+  <!-- Step 4 (Current) - Bright pink circle -->
+  <circle cx="460" cy="90" r="20" fill="#ec008c" stroke="#ec008c" stroke-width="2"/>
+  <text x="460" y="95" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">4</text>
+  <text x="460" y="125" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#ec008c">Public</text>
+  
+  <!-- Step 5 - Light gray circle -->
+  <circle cx="580" cy="90" r="20" fill="white" stroke="#cbd5e0" stroke-width="2"/>
+  <text x="580" y="95" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#a0aec0">5</text>
+  <text x="580" y="125" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#718096">Practical Value</text>
+  
+  <!-- Step 6 - Light gray circle -->
+  <circle cx="700" cy="90" r="20" fill="white" stroke="#cbd5e0" stroke-width="2"/>
+  <text x="700" y="95" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#a0aec0">6</text>
+  <text x="700" y="125" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#718096">Stories</text>
+  
+  <!-- Current Step Details Box -->
+  <rect x="100" y="160" width="600" height="70" fill="#fdeff5" stroke="#fef7fa" stroke-width="1" rx="6" ry="6"/>
+  <text x="120" y="185" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#555555">Step 4: Public</text>
+  <text x="120" y="210" font-family="Arial, sans-serif" font-size="14" fill="#555555">Ensure visibility and shareability of your content</text>
+</svg>

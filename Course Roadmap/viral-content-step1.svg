@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240">
+  <!-- 
+    CUSTOMIZATION GUIDE:
+    - Main colors you may want to change:
+      - Active step color: #0c4a6e (blue)
+      - Inactive step color: #cbd5e0 (light gray)
+      - Background color: #ffffff (white)
+      - Detail box background: #c9e9eb (light blue)
+      - Detail box border: #FAFDFD (lighter blue)
+    - Font styles can be modified in each text element
+    - Progress line width and position can be adjusted
+  -->
+  
+  <!-- Background - change fill color to modify background -->
+  <rect width="800" height="240" fill="#ffffff" rx="8" ry="8"/>
+  
+  <!-- Title - modify text content and font properties -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#0c4a6e">Viral Content Creation Process</text>
+  
+  <!-- Connection line - This is the gray background line -->
+  <line x1="100" y1="90" x2="700" y2="90" stroke="#555555" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Progress line - For step 1, no progress is shown yet -->
+  <!-- Adjust x2 value for each step: Step 1=100, Step 2=220, Step 3=340, Step 4=460, Step 5=580, Step 6=700 -->
+  <line x1="100" y1="90" x2="100" y2="90" stroke="#0c4a6e" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Step 1 (Current) - Blue circle -->
+  <circle cx="100" cy="90" r="20" fill="#0c4a6e" stroke="#0c4a6e" stroke-width="2"/>
+  <text x="100" y="95" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">1</text>
+  <text x="100" y="125" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#0c4a6e">Content Creation</text>
+  <text x="100" y="140" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#0c4a6e">Strategy</text>
+  
+  <!-- Step 2 - Gray circle -->
+  <circle cx="220" cy="90" r="20" fill="white" stroke="#cbd5e0" stroke-width="2"/>
+  <text x="220" y="95" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#a0aec0">2</text>
+  <text x="220" y="125" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#718096">Triggers</text>
+  
+  <!-- Step 3 - Gray circle -->
+  <circle cx="340" cy="90" r="20" fill="white" stroke="#cbd5e0" stroke-width="2"/>
+  <text x="340" y="95" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#a0aec0">3</text>
+  <text x="340" y="125" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#718096">Emotion</text>
+  
+  <!-- Step 4 - Gray circle -->
+  <circle cx="460" cy="90" r="20" fill="white" stroke="#cbd5e0" stroke-width="2"/>
+  <text x="460" y="95" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#a0aec0">4</text>
+  <text x="460" y="125" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#718096">Public</text>
+  
+  <!-- Step 5 - Gray circle -->
+  <circle cx="580" cy="90" r="20" fill="white" stroke="#cbd5e0" stroke-width="2"/>
+  <text x="580" y="95" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#a0aec0">5</text>
+  <text x="580" y="125" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#718096">Practical Value</text>
+  
+  <!-- Step 6 - Gray circle -->
+  <circle cx="700" cy="90" r="20" fill="white" stroke="#cbd5e0" stroke-width="2"/>
+  <text x="700" y="95" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#a0aec0">6</text>
+  <text x="700" y="125" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#718096">Stories</text>
+  
+  <!-- Current Step Details Box - Light blue background with border -->
+  <rect x="100" y="160" width="600" height="70" fill="#edf8fd" stroke="#FAFDFD" stroke-width="1" rx="6" ry="6"/>
+  <text x="120" y="185" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#555555">Step 1: Content Creation Strategy</text>
+  <text x="120" y="210" font-family="Arial, sans-serif" font-size="14" fill="#555555">Plan social currency, evolving staged project</text>
+</svg>

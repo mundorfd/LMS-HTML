@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viral Content Creation Process</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+        
+        h2 {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #2d3748;
+        }
+        
+        /* Horizontal progress tracker (desktop) */
+        .progress-tracker {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 50px;
+            position: relative;
+            display: none; /* Hidden on mobile by default */
+        }
+        
+        @media (min-width: 768px) {
+            .progress-tracker {
+                display: flex; /* Show on desktop */
+            }
+            
+            .progress-tracker-mobile {
+                display: none; /* Hide on desktop */
+            }
+        }
+        
+        .progress-line {
+            position: absolute;
+            height: 4px;
+            background-color: #e2e8f0;
+            top: 18px;
+            left: 40px;
+            right: 40px;
+            z-index: 0;
+        }
+        
+        .progress-line-completed {
+            position: absolute;
+            height: 4px;
+            background-color: #3b82f6;
+            top: 18px;
+            left: 40px;
+            z-index: 1;
+            transition: width 0.3s ease;
+        }
+        
+        .step-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .step-indicator {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            border: 2px solid #cbd5e0;
+            background-color: white;
+            color: #a0aec0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 8px;
+            transition: all 0.2s ease;
+        }
+        
+        .step-title {
+            font-size: 14px;
+            font-weight: 500;
+            text-align: center;
+            color: #718096;
+            transition: color 0.2s ease;
+        }
+        
+        /* Current step styling */
+        .step-container.current .step-indicator {
+            border-color: #3b82f6;
+            background-color: #3b82f6;
+            color: white;
+        }
+        
+        .step-container.current .step-title {
+            color: #3b82f6;
+            font-weight: 600;
+        }
+        
+        /* Completed step styling */
+        .step-container.completed .step-indicator {
+            border-color: #3b82f6;
+            background-color: white;
+            color: #3b82f6;
+        }
+        
+        /* Mobile vertical progress tracker */
+        .progress-tracker-mobile {
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        .progress-line-vertical {
+            position: absolute;
+            width: 4px;
+            background-color: #e2e8f0;
+            top: 0;
+            bottom: 0;
+            left: 16px;
+            z-index: 0;
+        }
+        
+        .progress-line-vertical-completed {
+            position: absolute;
+            width: 4px;
+            background-color: #3b82f6;
+            top: 0;
+            left: 16px;
+            z-index: 1;
+            transition: height 0.3s ease;
+        }
+        
+        .step-container-mobile {
+            display: flex;
+            margin-bottom: 32px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .step-indicator-mobile {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            border: 2px solid #cbd5e0;
+            background-color: white;
+            color: #a0aec0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 14px;
+            margin-right: 16px;
+            flex-shrink: 0;
+        }
+        
+        .step-content-mobile {
+            display: flex;
+            flex-direction: column;
+            opacity: 0.6;
+            transition: opacity 0.2s ease;
+        }
+        
+        .step-title-mobile {
+            font-size: 16px;
+            font-weight: 600;
+            color: #4a5568;
+        }
+        
+        .step-description-mobile {
+            font-size: 14px;
+            color: #718096;
+        }
+        
+        /* Current step styling (mobile) */
+        .step-container-mobile.current .step-indicator-mobile {
+            border-color: #3b82f6;
+            background-color: #3b82f6;
+            color: white;
+        }
+        
+        .step-container-mobile.current .step-content-mobile {
+            opacity: 1;
+        }
+        
+        .step-container-mobile.current .step-title-mobile {
+            color: #3b82f6;
+        }
+        
+        /* Completed step styling (mobile) */
+        .step-container-mobile.completed .step-indicator-mobile {
+            border-color: #3b82f6;
+            background-color: white;
+            color: #3b82f6;
+        }
+        
+        /* Current step details panel */
+        .step-details {
+            margin-top: 32px;
+            padding: 24px;
+            background-color: #ebf5ff;
+            border-radius: 8px;
+            border: 1px solid #bfdbfe;
+        }
+        
+        .step-details h3 {
+            font-size: 20px;
+            font-weight: bold;
+            color: #1e40af;
+            margin-bottom: 12px;
+        }
+        
+        .step-details p {
+            color: #3b82f6;
+            margin-bottom: 12px;
+        }
+        
+        .step-details ul {
+            color: #3b82f6;
+            margin-left: 20px;
+        }
+        
+        .step-details li {
+            margin-bottom: 6px;
+        }
+        
+        /* Controls to change current step */
+        .controls {
+            display: flex;
+            justify-content: center;
+            margin-top: 24px;
+            gap: 8px;
+        }
+        
+        .btn {
+            padding: 8px 16px;
+            background-color: #3b82f6;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.2s ease;
+        }
+        
+        .btn:hover {
+            background-color: #2563eb;
+        }
+        
+        .btn:disabled {
+            background-color: #cbd5e0;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Viral Content Creation Process</h2>
+        
+        <!-- Horizontal progress tracker (desktop) -->
+        <div class="progress-tracker">
+            <div class="progress-line"></div>
+            <div class="progress-line-completed" id="progress-completed"></div>
+            
+            <!-- Steps will be inserted here by JavaScript -->
+        </div>
+        
+        <!-- Vertical progress tracker (mobile) -->
+        <div class="progress-tracker-mobile">
+            <div class="progress-line-vertical"></div>
+            <div class="progress-line-vertical-completed" id="progress-completed-mobile"></div>
+            
+            <!-- Mobile steps will be inserted here by JavaScript -->
+        </div>
+        
+        <!-- Current step details -->
+        <div class="step-details" id="step-details">
+            <!-- Current step details will be inserted here by JavaScript -->
+        </div>
+        
+        <!-- Navigation controls -->
+        <div class="controls">
+            <button class="btn" id="prev-btn" disabled>Previous Step</button>
+            <button class="btn" id="next-btn">Next Step</button>
+        </div>
+    </div>
+    
+    <script>
+        // Step data
+        const steps = [
+            {
+                number: 1,
+                title: "Content Creation Strategy",
+                description: "Plan social currency, evolving staged project",
+                details: `
+                    <h3>Step 1: Content Creation Strategy</h3>
+                    <p>Plan social currency, evolving staged project</p>
+                    <ul>
+                        <li>Strategy plan introduction</li>
+                        <li>Planning social currency elements</li>
+                        <li>Developing evolving staged project</li>
+                    </ul>
+                `
+            },
+            {
+                number: 2,
+                title: "Triggers",
+                description: "Create environmental triggers",
+                details: `
+                    <h3>Step 2: Triggers</h3>
+                    <p>Create environmental triggers that prompt people to think about your content</p>
+                    <ul>
+                        <li>Identifying everyday triggers</li>
+                        <li>Creating association patterns</li>
+                        <li>Developing context-specific reminders</li>
+                    </ul>
+                `
+            },
+            {
+                number: 3,
+                title: "Emotion",
+                description: "Evoke strong emotional responses",
+                details: `
+                    <h3>Step 3: Emotion</h3>
+                    <p>Evoke strong emotional responses that drive sharing</p>
+                    <ul>
+                        <li>Understanding emotional drivers</li>
+                        <li>Creating high-arousal content</li>
+                        <li>Balancing positive and negative emotions</li>
+                    </ul>
+                `
+            },
+            {
+                number: 4,
+                title: "Public",
+                description: "Ensure visibility and shareability",
+                details: `
+                    <h3>Step 4: Public</h3>
+                    <p>Ensure visibility and shareability of your content</p>
+                    <ul>
+                        <li>Optimizing for public consumption</li>
+                        <li>Creating observable behaviors</li>
+                        <li>Building social proof elements</li>
+                    </ul>
+                `
+            },
+            {
+                number: 5,
+                title: "Practical Value",
+                description: "Provide useful information or solutions",
+                details: `
+                    <h3>Step 5: Practical Value</h3>
+                    <p>Provide useful information or solutions that people want to share</p>
+                    <ul>
+                        <li>Identifying audience needs</li>
+                        <li>Creating genuinely helpful content</li>
+                        <li>Packaging information for easy consumption</li>
+                    </ul>
+                `
+            },
+            {
+                number: 6,
+                title: "Stories",
+                description: "Craft compelling narratives",
+                details: `
+                    <h3>Step 6: Stories</h3>
+                    <p>Craft compelling narratives that people want to tell others</p>
+                    <ul>
+                        <li>Developing narrative frameworks</li>
+                        <li>Creating relatable characters</li>
+                        <li>Building memorable story arcs</li>
+                    </ul>
+                `
+            }
+        ];
+        
+        // Current step (1-based index)
+        let currentStep = 1;
+        
+        // DOM elements
+        const progressTracker = document.querySelector('.progress-tracker');
+        const progressTrackerMobile = document.querySelector('.progress-tracker-mobile');
+        const progressCompleted = document.getElementById('progress-completed');
+        const progressCompletedMobile = document.getElementById('progress-completed-mobile');
+        const stepDetails = document.getElementById('step-details');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+        
+        // Initialize the tracker
+        function initTracker() {
+            // Create desktop steps
+            steps.forEach((step, index) => {
+                const stepElement = document.createElement('div');
+                stepElement.className = `step-container ${step.number === currentStep ? 'current' : ''} ${step.number < currentStep ? 'completed' : ''}`;
+                stepElement.dataset.step = step.number;
+                
+                stepElement.innerHTML = `
+                    <div class="step-indicator">${step.number}</div>
+                    <div class="step-title">${step.title}</div>
+                `;
+                
+                stepElement.addEventListener('click', () => {
+                    updateCurrentStep(step.number);
+                });
+                
+                progressTracker.appendChild(stepElement);
+            });
+            
+            // Create mobile steps
+            steps.forEach((step, index) => {
+                const stepElement = document.createElement('div');
+                stepElement.className = `step-container-mobile ${step.number === currentStep ? 'current' : ''} ${step.number < currentStep ? 'completed' : ''}`;
+                stepElement.dataset.step = step.number;
+                
+                stepElement.innerHTML = `
+                    <div class="step-indicator-mobile">${step.number}</div>
+                    <div class="step-content-mobile">
+                        <div class="step-title-mobile">${step.title}</div>
+                        <div class="step-description-mobile">${step.description}</div>
+                    </div>
+                `;
+                
+                stepElement.addEventListener('click', () => {
+                    updateCurrentStep(step.number);
+                });
+                
+                progressTrackerMobile.appendChild(stepElement);
+            });
+            
+            updateProgressBar();
+            updateStepDetails();
+        }
+        
+        // Update current step
+        function updateCurrentStep(stepNumber) {
+            if (stepNumber < 1 || stepNumber > steps.length) return;
+            
+            currentStep = stepNumber;
+            
+            // Update desktop step indicators
+            document.querySelectorAll('.step-container').forEach(element => {
+                const step = parseInt(element.dataset.step);
+                element.className = `step-container ${step === currentStep ? 'current' : ''} ${step < currentStep ? 'completed' : ''}`;
+            });
+            
+            // Update mobile step indicators
+            document.querySelectorAll('.step-container-mobile').forEach(element => {
+                const step = parseInt(element.dataset.step);
+                element.className = `step-container-mobile ${step === currentStep ? 'current' : ''} ${step < currentStep ? 'completed' : ''}`;
+            });
+            
+            updateProgressBar();
+            updateStepDetails();
+            updateButtons();
+        }
+        
+        // Update progress bar
+        function updateProgressBar() {
+            // Calculate percentage (accounting for step positioning)
+            const stepCount = steps.length;
+            const percentage = ((currentStep - 1) / (stepCount - 1)) * 100;
+            
+            // For horizontal progress bar (desktop)
+            const progressWidth = percentage + '%';
+            progressCompleted.style.width = progressWidth;
+            
+            // For vertical progress bar (mobile)
+            const progressHeight = ((currentStep - 1) / (stepCount - 1)) * 100 + '%';
+            progressCompletedMobile.style.height = progressHeight;
+        }
+        
+        // Update step details
+        function updateStepDetails() {
+            const step = steps.find(s => s.number === currentStep);
+            if (step) {
+                stepDetails.innerHTML = step.details;
+            }
+        }
+        
+        // Update navigation buttons
+        function updateButtons() {
+            prevBtn.disabled = currentStep === 1;
+            nextBtn.disabled = currentStep === steps.length;
+        }
+        
+        // Event listeners for navigation buttons
+        prevBtn.addEventListener('click', () => {
+            if (currentStep > 1) {
+                updateCurrentStep(currentStep - 1);
+            }
+        });
+        
+        nextBtn.addEventListener('click', () => {
+            if (currentStep < steps.length) {
+                updateCurrentStep(currentStep + 1);
+            }
+        });
+        
+        // Initialize the tracker when the page loads
+        window.addEventListener('DOMContentLoaded', initTracker);
+    </script>
+</body>
+</html>
