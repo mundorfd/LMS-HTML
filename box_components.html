@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Canvas Box Components - Inline Style Reference</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .component-section {
+            margin-bottom: 40px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .component-header {
+            background: #f5f5f5;
+            padding: 15px 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .component-body {
+            padding: 20px;
+        }
+
+        .code-block {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 4px;
+            padding: 15px;
+            font-family: 'Courier New', monospace;
+            font-size: 11px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            margin: 10px 0;
+        }
+
+        .color-demo {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 15px 0;
+        }
+
+        .color-sample {
+            padding: 10px;
+            border-radius: 4px;
+            text-align: center;
+            font-size: 11px;
+            font-weight: bold;
+        }
+
+        .usage-note {
+            background: #e8f4f8;
+            border-left: 4px solid #007acc;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div style="border-bottom: 3px solid #dc4405; padding-bottom: 20px; margin-bottom: 30px;">
+            <h1 style="color: #dc4405; margin: 0; font-size: 24pt;">Canvas Box Components</h1>
+            <h2 style="color: #666; margin: 10px 0 0 0; font-size: 16pt;">Inline Style Reference</h2>
+            <p style="margin: 10px 0 0 0; color: #888;">Ready-to-paste HTML code for Canvas LMS</p>
+        </div>
+        <!-- Color-Coded Content Boxes -->
+        <div class="component-section">
+            <div class="component-header">
+                <h3 style="margin: 0; color: #333;">Color-Coded Content Boxes</h3>
+                <p style="margin: 5px 0 0 0; color: #666;">Multi-colored bordered boxes for organizing different types of content</p>
+            </div>
+            <div class="component-body">
+                <div class="color-demo">
+                    <div class="color-sample"
+                         style="background: #d73f09; color: white;">#d73f09 - Primary Red</div>
+                    <div class="color-sample"
+                         style="background: #4A773C; color: white;">#4A773C - Green</div>
+                    <div class="color-sample"
+                         style="background: #00859B; color: white;">#00859B - Teal</div>
+                    <div class="color-sample"
+                         style="background: #FFB500; color: black;">#FFB500 - Yellow</div>
+                    <div class="color-sample"
+                         style="background: #006A8E; color: white;">#006A8E - Blue</div>
+                </div>
+                <h4>Live Previews:</h4>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin: 15px 0;">
+                    <div style="background: white; border: 2px solid #d73f09; padding: 1.5rem; border-radius: 8px;">
+                        <h3 style="color: #d73f09; font-size: 14pt; margin: 0 0 1rem 0; font-weight: bold;">Primary Content</h3>
+                        <div style="font-size: 12pt; line-height: 1.6;">
+                            <ul>
+                                <li>First important point</li>
+                                <li>Second key detail</li>
+                                <li>Third essential item</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div style="background: white; border: 2px solid #4A773C; padding: 1.5rem; border-radius: 8px;">
+                        <h3 style="color: #4A773C; font-size: 14pt; margin: 0 0 1rem 0; font-weight: bold;">Secondary Content</h3>
+                        <div style="font-size: 12pt; line-height: 1.6;">
+                            <ul>
+                                <li>Supporting information</li>
+                                <li>Additional details</li>
+                                <li>Related concepts</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px; margin: 15px 0;">
+                    <div style="background: white; border: 2px solid #00859B; padding: 1.5rem; border-radius: 8px;">
+                        <h3 style="color: #00859B; font-size: 14pt; margin: 0 0 1rem 0; font-weight: bold;">Teal Content</h3>
+                        <div style="font-size: 12pt; line-height: 1.6;">
+                            <p>Sample content here</p>
+                        </div>
+                    </div>
+                    <div style="background: white; border: 2px solid #FFB500; padding: 1.5rem; border-radius: 8px;">
+                        <h3 style="color: #FFB500; font-size: 14pt; margin: 0 0 1rem 0; font-weight: bold;">Yellow Content</h3>
+                        <div style="font-size: 12pt; line-height: 1.6;">
+                            <p>Sample content here</p>
+                        </div>
+                    </div>
+                    <div style="background: white; border: 2px solid #006A8E; padding: 1.5rem; border-radius: 8px;">
+                        <h3 style="color: #006A8E; font-size: 14pt; margin: 0 0 1rem 0; font-weight: bold;">Blue Content</h3>
+                        <div style="font-size: 12pt; line-height: 1.6;">
+                            <p>Sample content here</p>
+                        </div>
+                    </div>
+                </div>
+                <h4>Basic Template (Change color codes as needed):</h4>
+                <div class="code-block">&lt;div style="background: white; border: 2px solid #d73f09; padding: 1.5rem; border-radius: 8px;"&gt; &lt;h3 style="color: #d73f09; font-size: 14pt; margin: 0 0 1rem 0; font-weight: bold;"&gt;Your Heading&lt;/h3&gt; &lt;div style="font-size: 12pt; line-height: 1.6;"&gt; &lt;ul&gt; &lt;li&gt;First point&lt;/li&gt; &lt;li&gt;Second point&lt;/li&gt; &lt;li&gt;Third point&lt;/li&gt; &lt;/ul&gt; &lt;/div&gt; &lt;/div&gt;</div>
+                <h4>Pre-built Color Variations:</h4>
+                <h5>Primary Red Version:</h5>
+                <div class="code-block">&lt;div style="background: white; border: 2px solid #d73f09; padding: 1.5rem; border-radius: 8px;"&gt; &lt;h3 style="color: #d73f09; font-size: 14pt; margin: 0 0 1rem 0; font-weight: bold;"&gt;Primary Content&lt;/h3&gt; &lt;div style="font-size: 12pt; line-height: 1.6;"&gt; &lt;p&gt;Your content here&lt;/p&gt; &lt;/div&gt; &lt;/div&gt;</div>
+                <h5>Green Version:</h5>
+                <div class="code-block">&lt;div style="background: white; border: 2px solid #4A773C; padding: 1.5rem; border-radius: 8px;"&gt; &lt;h3 style="color: #4A773C; font-size: 14pt; margin: 0 0 1rem 0; font-weight: bold;"&gt;Secondary Content&lt;/h3&gt; &lt;div style="font-size: 12pt; line-height: 1.6;"&gt; &lt;p&gt;Your content here&lt;/p&gt; &lt;/div&gt; &lt;/div&gt;</div>
+                <h5>Teal Version:</h5>
+                <div class="code-block">&lt;div style="background: white; border: 2px solid #00859B; padding: 1.5rem; border-radius: 8px;"&gt; &lt;h3 style="color: #00859B; font-size: 14pt; margin: 0 0 1rem 0; font-weight: bold;"&gt;Tertiary Content&lt;/h3&gt; &lt;div style="font-size: 12pt; line-height: 1.6;"&gt; &lt;p&gt;Your content here&lt;/p&gt; &lt;/div&gt; &lt;/div&gt;</div>
+                <h5>Yellow Version:</h5>
+                <div class="code-block">&lt;div style="background: white; border: 2px solid #FFB500; padding: 1.5rem; border-radius: 8px;"&gt; &lt;h3 style="color: #FFB500; font-size: 14pt; margin: 0 0 1rem 0; font-weight: bold;"&gt;Highlight Content&lt;/h3&gt; &lt;div style="font-size: 12pt; line-height: 1.6;"&gt; &lt;p&gt;Your content here&lt;/p&gt; &lt;/div&gt; &lt;/div&gt;</div>
+                <h5>Blue Version:</h5>
+                <div class="code-block">&lt;div style="background: white; border: 2px solid #006A8E; padding: 1.5rem; border-radius: 8px;"&gt; &lt;h3 style="color: #006A8E; font-size: 14pt; margin: 0 0 1rem 0; font-weight: bold;"&gt;Alternative Content&lt;/h3&gt; &lt;div style="font-size: 12pt; line-height: 1.6;"&gt; &lt;p&gt;Your content here&lt;/p&gt; &lt;/div&gt; &lt;/div&gt;</div>
+                <div class="usage-note">
+                    <strong>Usage Tips:</strong> Use different colors to categorize content types (e.g., red for core concepts, green for examples, blue for resources)
+                </div>
+            </div>
+        </div>
+        <!-- Warning/Alert Box -->
+        <div class="component-section">
+            <div class="component-header">
+                <h3 style="margin: 0; color: #333;">Warning/Alert Box</h3>
+                <p style="margin: 5px 0 0 0; color: #666;">Highlighted container for important warnings or critical information</p>
+            </div>
+            <div class="component-body">
+                <h4>Live Preview:</h4>
+                <div style="background: #FFE6E6; border: 2px solid #D73F09; padding: 1.5rem; margin: 1rem 0; border-radius: 6px;">
+                    <div style="font-weight: bold; font-size: 12pt; margin-bottom: 1rem; color: #D73F09;">Important Warning:</div>
+                    <div style="font-size: 12pt; line-height: 1.6;">
+                        <p style="margin: 0;">This is critical information that students need to be aware of. It stands out from regular content and draws immediate attention.</p>
+                    </div>
+                </div>
+                <h4>Standard Warning Box:</h4>
+                <div class="code-block">&lt;div style="background: #FFE6E6; border: 2px solid #D73F09; padding: 1.5rem; margin: 1rem 0; border-radius: 6px;"&gt; &lt;div style="font-weight: bold; font-size: 12pt; margin-bottom: 1rem; color: #D73F09;"&gt;Important Warning:&lt;/div&gt; &lt;div style="font-size: 12pt; line-height: 1.6;"&gt; &lt;p style="margin: 0;"&gt;Your warning content goes here.&lt;/p&gt; &lt;/div&gt; &lt;/div&gt;</div>
+                <h4>Alternative Warning Labels:</h4>
+                <div class="code-block">&lt;!-- Critical Alert --&gt; &lt;div style="background: #FFE6E6; border: 2px solid #D73F09; padding: 1.5rem; margin: 1rem 0; border-radius: 6px;"&gt; &lt;div style="font-weight: bold; font-size: 12pt; margin-bottom: 1rem; color: #D73F09;"&gt;Critical Alert:&lt;/div&gt; &lt;div style="font-size: 12pt; line-height: 1.6;"&gt; &lt;p style="margin: 0;"&gt;Your critical content here.&lt;/p&gt; &lt;/div&gt; &lt;/div&gt; &lt;!-- Deadline Reminder --&gt; &lt;div style="background: #FFE6E6; border: 2px solid #D73F09; padding: 1.5rem; margin: 1rem 0; border-radius: 6px;"&gt; &lt;div style="font-weight: bold; font-size: 12pt; margin-bottom: 1rem; color: #D73F09;"&gt;Deadline Reminder:&lt;/div&gt; &lt;div style="font-size: 12pt; line-height: 1.6;"&gt; &lt;p style="margin: 0;"&gt;Your deadline content here.&lt;/p&gt; &lt;/div&gt; &lt;/div&gt; &lt;!-- Common Mistake --&gt; &lt;div style="background: #FFE6E6; border: 2px solid #D73F09; padding: 1.5rem; margin: 1rem 0; border-radius: 6px;"&gt; &lt;div style="font-weight: bold; font-size: 12pt; margin-bottom: 1rem; color: #D73F09;"&gt;Common Mistake to Avoid:&lt;/div&gt; &lt;div style="font-size: 12pt; line-height: 1.6;"&gt; &lt;p style="margin: 0;"&gt;Your mistake prevention content here.&lt;/p&gt; &lt;/div&gt; &lt;/div&gt;</div>
+                <div class="usage-note">
+                    <strong>Usage Tips:</strong> Use sparingly for truly important information. Multiple warning boxes lose their impact.
+                </div>
+            </div>
+        </div>
+        <!-- Blue Information Box -->
+        <div class="component-section">
+            <div class="component-header">
+                <h3 style="margin: 0; color: #333;">Blue Information Box</h3>
+                <p style="margin: 5px 0 0 0; color: #666;">Neutral informational container for supplementary content</p>
+            </div>
+            <div class="component-body">
+                <h4>Live Preview:</h4>
+                <div class="bluebox"
+                     style="border: 3px solid #b8dde1; padding: 1.5em; margin: 1rem 0; background-color: #feffff; color: #1e1e19; border-radius: 8px;">
+                    <div style="font-weight: bold; font-size: 12pt; margin-bottom: 1rem;">Key Information:</div>
+                    <div style="font-size: 12pt; line-height: 1.6;">
+                        <p style="margin: 0;">This is supplementary information that provides additional context or helpful details without being critical or warning-level content.</p>
+                    </div>
+                </div>
+                <h4>Standard Information Box:</h4>
+                <div class="code-block">&lt;div class="bluebox" style="border: 3px solid #b8dde1; padding: 1.5em; margin: 1rem 0; background-color: #feffff; color: #1e1e19; border-radius: 8px;"&gt; &lt;div style="font-weight: bold; font-size: 12pt; margin-bottom: 1rem;"&gt;Key Information:&lt;/div&gt; &lt;div style="font-size: 12pt; line-height: 1.6;"&gt; &lt;p style="margin: 0;"&gt;Your informational content goes here.&lt;/p&gt; &lt;/div&gt; &lt;/div&gt;</div>
+                <h4>Alternative Information Labels:</h4>
+                <div class="code-block">&lt;!-- Helpful Tip --&gt; &lt;div class="bluebox" style="border: 3px solid #b8dde1; padding: 1.5em; margin: 1rem 0; background-color: #feffff; color: #1e1e19; border-radius: 8px;"&gt; &lt;div style="font-weight: bold; font-size: 12pt; margin-bottom: 1rem;"&gt;Helpful Tip:&lt;/div&gt; &lt;div style="font-size: 12pt; line-height: 1.6;"&gt; &lt;p style="margin: 0;"&gt;Your tip content here.&lt;/p&gt; &lt;/div&gt; &lt;/div&gt; &lt;!-- Key Takeaway --&gt; &lt;div class="bluebox" style="border: 3px solid #b8dde1; padding: 1.5em; margin: 1rem 0; background-color: #feffff; color: #1e1e19; border-radius: 8px;"&gt; &lt;div style="font-weight: bold; font-size: 12pt; margin-bottom: 1rem;"&gt;Key Takeaway:&lt;/div&gt; &lt;div style="font-size: 12pt; line-height: 1.6;"&gt; &lt;p style="margin: 0;"&gt;Your takeaway content here.&lt;/p&gt; &lt;/div&gt; &lt;/div&gt; &lt;!-- Background Information --&gt; &lt;div class="bluebox" style="border: 3px solid #b8dde1; padding: 1.5em; margin: 1rem 0; background-color: #feffff; color: #1e1e19; border-radius: 8px;"&gt; &lt;div style="font-weight: bold; font-size: 12pt; margin-bottom: 1rem;"&gt;Background Information:&lt;/div&gt; &lt;div style="font-size: 12pt; line-height: 1.6;"&gt; &lt;p style="margin: 0;"&gt;Your background content here.&lt;/p&gt; &lt;/div&gt; &lt;/div&gt;</div>
+                <div class="usage-note">
+                    <strong>Usage Tips:</strong> Great for supplementary information that enhances understanding but isn't critical.
+                </div>
+            </div>
+        </div>
+        <!-- Note Box -->
+        <div class="component-section">
+            <div class="component-header">
+                <h3 style="margin: 0; color: #333;">Note Box</h3>
+                <p style="margin: 5px 0 0 0; color: #666;">Side-accent container for annotations and additional notes</p>
+            </div>
+            <div class="component-body">
+                <h4>Live Preview:</h4>
+                <div class="note"
+                     style="background: #fafafa; border-left: 6px solid #d73f09; color: #2D3B45; padding: 0.5rem; margin: 20px 0 25px 0; font-weight: normal; line-height: 1.6rem;">
+                    <div style="font-size: 12pt;">
+                        <p style="margin: 0;">This is a note that provides additional context or clarification. The left border draws attention while maintaining a subtle appearance.</p>
+                    </div>
+                </div>
+                <h4>Standard Note Box:</h4>
+                <div class="code-block">&lt;div class="note" style="background: #fafafa; border-left: 6px solid #d73f09; color: #2D3B45; padding: 0.5rem; margin: 20px 0 25px 0; font-weight: normal; line-height: 1.6rem;"&gt; &lt;div style="font-size: 12pt;"&gt; &lt;p style="margin: 0;"&gt;Your note content goes here.&lt;/p&gt; &lt;/div&gt; &lt;/div&gt;</div>
+                <h4>Alternative Border Colors:</h4>
+                <div class="code-block">&lt;!-- Green Note --&gt; &lt;div class="note" style="background: #fafafa; border-left: 6px solid #4A773C; color: #2D3B45; padding: 0.5rem; margin: 20px 0 25px 0; font-weight: normal; line-height: 1.6rem;"&gt; &lt;div style="font-size: 12pt;"&gt; &lt;p style="margin: 0;"&gt;Your note content here.&lt;/p&gt; &lt;/div&gt; &lt;/div&gt; &lt;!-- Blue Note --&gt; &lt;div class="note" style="background: #fafafa; border-left: 6px solid #006A8E; color: #2D3B45; padding: 0.5rem; margin: 20px 0 25px 0; font-weight: normal; line-height: 1.6rem;"&gt; &lt;div style="font-size: 12pt;"&gt; &lt;p style="margin: 0;"&gt;Your note content here.&lt;/p&gt; &lt;/div&gt; &lt;/div&gt; &lt;!-- Teal Note --&gt; &lt;div class="note" style="background: #fafafa; border-left: 6px solid #00859B; color: #2D3B45; padding: 0.5rem; margin: 20px 0 25px 0; font-weight: normal; line-height: 1.6rem;"&gt; &lt;div style="font-size: 12pt;"&gt; &lt;p style="margin: 0;"&gt;Your note content here.&lt;/p&gt; &lt;/div&gt; &lt;/div&gt;</div>
+                <div class="usage-note">
+                    <strong>Usage Tips:</strong> Perfect for definitions, examples, or side explanations that complement main content.
+                </div>
+            </div>
+        </div>
+        <!-- Styled Table -->
+        <div class="component-section">
+            <div class="component-header">
+                <h3 style="margin: 0; color: #333;">Styled Data Table</h3>
+                <p style="margin: 5px 0 0 0; color: #666;">Enhanced table with colored headers and alternating row backgrounds</p>
+            </div>
+            <div class="component-body">
+                <h4>Live Preview:</h4>
+                <div style="background: white; border-radius: 8px; overflow: hidden; margin-bottom: 2rem; border: 2px solid #d73f09;">
+                    <table style="width: 100%; border-collapse: collapse;">
+                        <thead>
+                            <tr>
+                                <th style="padding: 12px; background-color: #d73f09; color: white; font-size: 12pt;">Category</th>
+                                <th style="padding: 12px; background-color: #d73f09; color: white; font-size: 12pt;">Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="border-top: 1px solid #ccc; padding: 12px; font-size: 12pt; font-weight: bold;">Item One</td>
+                                <td style="border-top: 1px solid #ccc; padding: 12px; font-size: 12pt;">Description of the first item with details.</td>
+                            </tr>
+                            <tr style="background-color: #f9f9f9;">
+                                <td style="border-top: 1px solid #ccc; padding: 12px; font-size: 12pt; font-weight: bold;">Item Two</td>
+                                <td style="border-top: 1px solid #ccc; padding: 12px; font-size: 12pt;">Description of the second item with details.</td>
+                            </tr>
+                            <tr>
+                                <td style="border-top: 1px solid #ccc; padding: 12px; font-size: 12pt; font-weight: bold;">Item Three</td>
+                                <td style="border-top: 1px solid #ccc; padding: 12px; font-size: 12pt;">Description of the third item with details.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h4>2-Column Table:</h4>
+                <div class="code-block">&lt;div style="background: white; border-radius: 8px; overflow: hidden; margin-bottom: 2rem; border: 2px solid #d73f09;"&gt; &lt;table style="width: 100%; border-collapse: collapse;"&gt; &lt;thead&gt; &lt;tr&gt; &lt;th style="padding: 12px; background-color: #d73f09; color: white; font-size: 12pt;"&gt;Header 1&lt;/th&gt; &lt;th style="padding: 12px; background-color: #d73f09; color: white; font-size: 12pt;"&gt;Header 2&lt;/th&gt; &lt;/tr&gt; &lt;/thead&gt; &lt;tbody&gt; &lt;tr&gt; &lt;td style="border-top: 1px solid #ccc; padding: 12px; font-size: 12pt; font-weight: bold;"&gt;Row 1 Col 1&lt;/td&gt; &lt;td style="border-top: 1px solid #ccc; padding: 12px; font-size: 12pt;"&gt;Row 1 Col 2&lt;/td&gt; &lt;/tr&gt; &lt;tr style="background-color: #f9f9f9;"&gt; &lt;td style="border-top: 1px solid #ccc; padding: 12px; font-size: 12pt; font-weight: bold;"&gt;Row 2 Col 1&lt;/td&gt; &lt;td style="border-top: 1px solid #ccc; padding: 12px; font-size: 12pt;"&gt;Row 2 Col 2&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td style="border-top: 1px solid #ccc; padding: 12px; font-size: 12pt; font-weight: bold;"&gt;Row 3 Col 1&lt;/td&gt; &lt;td style="border-top: 1px solid #ccc; padding: 12px; font-size: 12pt;"&gt;Row 3 Col 2&lt;/td&gt; &lt;/tr&gt; &lt;/tbody&gt; &lt;/table&gt; &lt;/div&gt;</div>
+                <h4>3-Column Table:</h4>
+                <div class="code-block">&lt;div style="background: white; border-radius: 8px; overflow: hidden; margin-bottom: 2rem; border: 2px solid #d73f09;"&gt; &lt;table style="width: 100%; border-collapse: collapse;"&gt; &lt;thead&gt; &lt;tr&gt; &lt;th style="padding: 12px; background-color: #d73f09; color: white; font-size: 12pt;"&gt;Header 1&lt;/th&gt; &lt;th style="padding: 12px; background-color: #d73f09; color: white; font-size: 12pt;"&gt;Header 2&lt;/th&gt; &lt;th style="padding: 12px; background-color: #d73f09; color: white; font-size: 12pt;"&gt;Header 3&lt;/th&gt; &lt;/tr&gt; &lt;/thead&gt; &lt;tbody&gt; &lt;tr&gt; &lt;td style="border-top: 1px solid #ccc; padding: 12px; font-size: 12pt; font-weight: bold;"&gt;Row 1 Col 1&lt;/td&gt; &lt;td style="border-top: 1px solid #ccc; padding: 12px; font-size: 12pt;"&gt;Row 1 Col 2&lt;/td&gt; &lt;td style="border-top: 1px solid #ccc; padding: 12px; font-size: 12pt;"&gt;Row 1 Col 3&lt;/td&gt; &lt;/tr&gt; &lt;tr style="background-color: #f9f9f9;"&gt; &lt;td style="border-top: 1px solid #ccc; padding: 12px; font-size: 12pt; font-weight: bold;"&gt;Row 2 Col 1&lt;/td&gt; &lt;td style="border-top: 1px solid #ccc; padding: 12px; font-size: 12pt;"&gt;Row 2 Col 2&lt;/td&gt; &lt;td style="border-top: 1px solid #ccc; padding: 12px; font-size: 12pt;"&gt;Row 2 Col 3&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td style="border-top: 1px solid #ccc; padding: 12px; font-size: 12pt; font-weight: bold;"&gt;Row 3 Col 1&lt;/td&gt; &lt;td style="border-top: 1px solid #ccc; padding: 12px; font-size: 12pt;"&gt;Row 3 Col 2&lt;/td&gt; &lt;td style="border-top: 1px solid #ccc; padding: 12px; font-size: 12pt;"&gt;Row 3 Col 3&lt;/td&gt; &lt;/tr&gt; &lt;/tbody&gt; &lt;/table&gt; &lt;/div&gt;</div>
+                <h4>Alternative Header Colors:</h4>
+                <h5>Green Headers Preview:</h5>
+                <div style="background: white; border-radius: 8px; overflow: hidden; margin-bottom: 1rem; border: 2px solid #4A773C;">
+                    <table style="width: 100%; border-collapse: collapse;">
+                        <thead>
+                            <tr>
+                                <th style="padding: 12px; background-color: #4A773C; color: white; font-size: 12pt;">Category</th>
+                                <th style="padding: 12px; background-color: #4A773C; color: white; font-size: 12pt;">Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="border-top: 1px solid #ccc; padding: 12px; font-size: 12pt; font-weight: bold;">Green Example</td>
+                                <td style="border-top: 1px solid #ccc; padding: 12px; font-size: 12pt;">Sample content with green headers.</td>
+                            </tr>
+                            <tr style="background-color: #f9f9f9;">
+                                <td style="border-top: 1px solid #ccc; padding: 12px; font-size: 12pt; font-weight: bold;">Second Row</td>
+                                <td style="border-top: 1px solid #ccc; padding: 12px; font-size: 12pt;">Alternating background color.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h5>Blue Headers Preview:</h5>
+                <div style="background: white; border-radius: 8px; overflow: hidden; margin-bottom: 1rem; border: 2px solid #006A8E;">
+                    <table style="width: 100%; border-collapse: collapse;">
+                        <thead>
+                            <tr>
+                                <th style="padding: 12px; background-color: #006A8E; color: white; font-size: 12pt;">Category</th>
+                                <th style="padding: 12px; background-color: #006A8E; color: white; font-size: 12pt;">Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="border-top: 1px solid #ccc; padding: 12px; font-size: 12pt; font-weight: bold;">Blue Example</td>
+                                <td style="border-top: 1px solid #ccc; padding: 12px; font-size: 12pt;">Sample content with blue headers.</td>
+                            </tr>
+                            <tr style="background-color: #f9f9f9;">
+                                <td style="border-top: 1px solid #ccc; padding: 12px; font-size: 12pt; font-weight: bold;">Second Row</td>
+                                <td style="border-top: 1px solid #ccc; padding: 12px; font-size: 12pt;">Alternating background color.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h4>Code Templates:</h4>
+                <div class="code-block">&lt;!-- Green Headers --&gt; &lt;div style="background: white; border-radius: 8px; overflow: hidden; margin-bottom: 2rem; border: 2px solid #4A773C;"&gt; &lt;table style="width: 100%; border-collapse: collapse;"&gt; &lt;thead&gt; &lt;tr&gt; &lt;th style="padding: 12px; background-color: #4A773C; color: white; font-size: 12pt;"&gt;Header 1&lt;/th&gt; &lt;th style="padding: 12px; background-color: #4A773C; color: white; font-size: 12pt;"&gt;Header 2&lt;/th&gt; &lt;/tr&gt; &lt;/thead&gt; &lt;tbody&gt; &lt;tr&gt; &lt;td style="border-top: 1px solid #ccc; padding: 12px; font-size: 12pt; font-weight: bold;"&gt;Cell 1&lt;/td&gt; &lt;td style="border-top: 1px solid #ccc; padding: 12px; font-size: 12pt;"&gt;Cell 2&lt;/td&gt; &lt;/tr&gt; &lt;tr style="background-color: #f9f9f9;"&gt; &lt;td style="border-top: 1px solid #ccc; padding: 12px; font-size: 12pt; font-weight: bold;"&gt;Cell 3&lt;/td&gt; &lt;td style="border-top: 1px solid #ccc; padding: 12px; font-size: 12pt;"&gt;Cell 4&lt;/td&gt; &lt;/tr&gt; &lt;/tbody&gt; &lt;/table&gt; &lt;/div&gt; &lt;!-- Blue Headers --&gt; &lt;div style="background: white; border-radius: 8px; overflow: hidden; margin-bottom: 2rem; border: 2px solid #006A8E;"&gt; &lt;table style="width: 100%; border-collapse: collapse;"&gt; &lt;thead&gt; &lt;tr&gt; &lt;th style="padding: 12px; background-color: #006A8E; color: white; font-size: 12pt;"&gt;Header 1&lt;/th&gt; &lt;th style="padding: 12px; background-color: #006A8E; color: white; font-size: 12pt;"&gt;Header 2&lt;/th&gt; &lt;/tr&gt; &lt;/thead&gt; &lt;tbody&gt; &lt;tr&gt; &lt;td style="border-top: 1px solid #ccc; padding: 12px; font-size: 12pt; font-weight: bold;"&gt;Cell 1&lt;/td&gt; &lt;td style="border-top: 1px solid #ccc; padding: 12px; font-size: 12pt;"&gt;Cell 2&lt;/td&gt; &lt;/tr&gt; &lt;tr style="background-color: #f9f9f9;"&gt; &lt;td style="border-top: 1px solid #ccc; padding: 12px; font-size: 12pt; font-weight: bold;"&gt;Cell 3&lt;/td&gt; &lt;td style="border-top: 1px solid #ccc; padding: 12px; font-size: 12pt;"&gt;Cell 4&lt;/td&gt; &lt;/tr&gt; &lt;/tbody&gt; &lt;/table&gt; &lt;/div&gt;</div>
+                <div class="usage-note">
+                    <strong>Usage Tips:</strong> Remember to alternate row backgrounds - odd rows plain white, even rows with #f9f9f9 background. Match border and header colors for consistency.
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div style="border-top: 2px solid #e0e0e0; padding-top: 20px; margin-top: 40px; text-align: center; color: #666;">
+            <p><strong>Canvas Box Components - Inline Reference</strong> | Updated July 16, 2025</p>
+            <p>Ready-to-paste HTML for Canvas LMS | All styles are inline for Canvas compatibility</p>
+        </div>
+    </div>
+</body>
+
+</html>

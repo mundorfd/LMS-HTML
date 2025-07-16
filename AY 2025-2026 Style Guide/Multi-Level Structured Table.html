@@ -1,0 +1,136 @@
+<div style="width: 98%; max-width: 1000px; margin-bottom: 24px;">
+    <div style="border-bottom: 3px solid #dc4405; padding-bottom: 20px; margin-bottom: 30px;">
+        <h2 style="color: #666; margin: 10px 0 0 0; font-size: 16pt;">Advanced Table Components</h2>
+        <p style="margin: 10px 0 0 0; color: #888;">Sophisticated table designs for complex instructional content</p>
+    </div>
+    <div id="structured-table"
+         style="margin-bottom: 50px; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden;">
+        <div style="background: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e0e0e0;">
+            <h3 style="margin: 0; color: #333;">Multi-Level Structured Table</h3>
+            <p style="margin: 5px 0 0 0; color: #666;">Complex table with header rows, grouped sections, and hierarchical content</p>
+        </div>
+        <div style="padding: 20px;">
+            <div style="margin-bottom: 25px;">
+                <h4>Preview:</h4>
+                <div style="background: white; border-radius: 8px; overflow: hidden; margin-bottom: 2rem; border: 2px solid #d73f09;">
+                    <table style="width: 100%; border-collapse: collapse;">
+                        <thead>
+                            <tr>
+                                <th style="padding: 12px; background-color: #d73f09; color: white; font-size: 12pt; width: 25%;"
+                                    scope="col">Section</th>
+                                <th style="padding: 12px; background-color: #d73f09; color: white; font-size: 12pt; width: 15%;"
+                                    scope="col">Duration</th>
+                                <th style="padding: 12px; background-color: #d73f09; color: white; font-size: 12pt;"
+                                    scope="col">Requirements</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="background-color: #f9f9f9;">
+                                <td style="border-top: 1px solid #ccc; padding: 12px; font-size: 12pt; vertical-align: top;">TEAM INTRODUCTION</td>
+                                <td style="border-top: 1px solid #ccc; padding: 12px; font-size: 12pt; vertical-align: top;">1-3 minutes</td>
+                                <td style="border-top: 1px solid #ccc; padding: 12px; font-size: 12pt; vertical-align: top;">Brief introduction to your team and project. Choose any visuals you like.</td>
+                            </tr>
+                            <tr style="background-color: #00859b; color: white;">
+                                <td style="border-top: 1px solid #ccc; padding: 12px; font-size: 12pt; text-align: center;"
+                                    colspan="3">FOR EACH TEAM MEMBER (1-3 minutes per member)</td>
+                            </tr>
+                            <tr>
+                                <td style="border-top: 1px solid #ccc; padding: 12px; font-size: 12pt; vertical-align: top; padding-left: 24px;">INDIVIDUAL OUTLINE</td>
+                                <td style="border-top: 1px solid #ccc; padding: 12px; font-size: 12pt; vertical-align: top;">Part of individual time</td>
+                                <td style="border-top: 1px solid #ccc; padding: 12px; font-size: 12pt; vertical-align: top;">Discuss your responsibilities and contributions for the term.</td>
+                            </tr>
+                            <tr style="background-color: #f0f8ff;">
+                                <td style="border-top: 1px solid #ccc; padding: 12px; font-size: 11pt; font-style: italic; vertical-align: top; padding-left: 48px;">Example subsection:</td>
+                                <td style="border-top: 1px solid #ccc; padding: 12px; font-size: 11pt; vertical-align: top;">&mdash;</td>
+                                <td style="border-top: 1px solid #ccc; padding: 12px; font-size: 11pt; vertical-align: top;">This shows how to nest examples or additional details under main sections.</td>
+                            </tr>
+                            <tr style="background-color: #e9e5e4;">
+                                <td style="border-top: 1px solid #ccc; padding: 12px; font-size: 12pt; vertical-align: top;">TOTAL LENGTH</td>
+                                <td style="border-top: 1px solid #ccc; padding: 12px; font-size: 12pt; vertical-align: top;"><strong>5-15 minutes</strong></td>
+                                <td style="border-top: 1px solid #ccc; padding: 12px; font-size: 12pt; vertical-align: top;">Team sections + individual presentations combined</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <h4>Ingredients:</h4>
+            <ul>
+                <li><strong>container border:</strong> 2px solid #d73f09</li>
+                <li><strong>border-radius:</strong> 8px</li>
+                <li><strong>overflow:</strong> hidden</li>
+                <li><strong>border-collapse:</strong> collapse</li>
+                <li><strong>header background:</strong> #d73f09, white text</li>
+                <li><strong>group header background:</strong> #00859B (teal), white text</li>
+                <li><strong>group header span:</strong> colspan="3" for full width</li>
+                <li><strong>alternating rows:</strong> #f9f9f9 background</li>
+                <li><strong>nested examples:</strong> #f0f8ff background</li>
+                <li><strong>summary row:</strong> #e9e5e4 background</li>
+                <li><strong>indentation:</strong> padding-left: 24px (level 1), 48px (level 2)</li>
+                <li><strong>cell padding:</strong> 12px</li>
+                <li><strong>cell borders:</strong> border-top 1px solid #ccc</li>
+                <li><strong>vertical alignment:</strong> top</li>
+            </ul>
+            <h4>HTML/CSS Code:</h4>
+            <pre style="background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 4px; padding: 15px; font-family: 'Courier New', monospace; font-size: 12px; overflow-x: auto; white-space: pre-wrap; margin: 10px 0;">&lt;div style="background: white; border-radius: 8px; overflow: hidden; margin-bottom: 2rem; border: 2px solid #d73f09;"&gt;
+    &lt;table style="width: 100%; border-collapse: collapse;"&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th scope="col" style="padding: 12px; background-color: #d73f09; color: white; font-size: 12pt; width: 25%;"&gt;Section&lt;/th&gt;
+                &lt;th scope="col" style="padding: 12px; background-color: #d73f09; color: white; font-size: 12pt; width: 15%;"&gt;Duration&lt;/th&gt;
+                &lt;th scope="col" style="padding: 12px; background-color: #d73f09; color: white; font-size: 12pt;"&gt;Requirements&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+            &lt;!-- Standard Row --&gt;
+            &lt;tr style="background-color: #f9f9f9;"&gt;
+                &lt;td style="border-top: 1px solid #ccc; padding: 12px; font-size: 12pt; font-weight: bold; vertical-align: top;"&gt;Section Name&lt;/td&gt;
+                &lt;td style="border-top: 1px solid #ccc; padding: 12px; font-size: 12pt; vertical-align: top;"&gt;Time&lt;/td&gt;
+                &lt;td style="border-top: 1px solid #ccc; padding: 12px; font-size: 12pt; vertical-align: top;"&gt;Description&lt;/td&gt;
+            &lt;/tr&gt;
+            
+            &lt;!-- Group Header Row --&gt;
+            &lt;tr style="background-color: #00859B; color: white;"&gt;
+                &lt;td colspan="3" style="border-top: 1px solid #ccc; padding: 12px; font-size: 12pt; font-weight: bold; text-align: center;"&gt;
+                    GROUP HEADER TEXT
+                &lt;/td&gt;
+            &lt;/tr&gt;
+            
+            &lt;!-- Indented Subsection --&gt;
+            &lt;tr&gt;
+                &lt;td style="border-top: 1px solid #ccc; padding: 12px; font-size: 12pt; font-weight: bold; vertical-align: top; padding-left: 24px;"&gt;Subsection&lt;/td&gt;
+                &lt;td style="border-top: 1px solid #ccc; padding: 12px; font-size: 12pt; vertical-align: top;"&gt;Time&lt;/td&gt;
+                &lt;td style="border-top: 1px solid #ccc; padding: 12px; font-size: 12pt; vertical-align: top;"&gt;Description&lt;/td&gt;
+            &lt;/tr&gt;
+            
+            &lt;!-- Nested Example Row --&gt;
+            &lt;tr style="background-color: #f0f8ff;"&gt;
+                &lt;td style="border-top: 1px solid #ccc; padding: 12px; font-size: 11pt; font-style: italic; vertical-align: top; padding-left: 48px;"&gt;Example:&lt;/td&gt;
+                &lt;td style="border-top: 1px solid #ccc; padding: 12px; font-size: 11pt; vertical-align: top;"&gt;&mdash;&lt;/td&gt;
+                &lt;td style="border-top: 1px solid #ccc; padding: 12px; font-size: 11pt; vertical-align: top;"&gt;Example details&lt;/td&gt;
+            &lt;/tr&gt;
+            
+            &lt;!-- Summary Row --&gt;
+            &lt;tr style="background-color: #e9e5e4;"&gt;
+                &lt;td style="border-top: 1px solid #ccc; padding: 12px; font-size: 12pt; font-weight: bold; vertical-align: top;"&gt;SUMMARY&lt;/td&gt;
+                &lt;td style="border-top: 1px solid #ccc; padding: 12px; font-size: 12pt; vertical-align: top;"&gt;Total&lt;/td&gt;
+                &lt;td style="border-top: 1px solid #ccc; padding: 12px; font-size: 12pt; vertical-align: top;"&gt;Summary info&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;/div&gt;</pre>
+            <h4>Suggested Uses:</h4>
+            <ul>
+                <li>Complex assignment requirements with multiple parts</li>
+                <li>Project presentation guidelines with team and individual components</li>
+                <li>Course schedules with grouped topics and subtopics</li>
+                <li>Assessment rubrics with categories and subcriteria</li>
+                <li>Multi-step processes with nested instructions</li>
+            </ul>
+            <div style="background: #fff3cd; border: 1px solid #ffeaa7; border-radius: 4px; padding: 10px; margin: 15px 0; font-size: 12px;"><strong>Date Created:</strong> June 13, 2025</div>
+        </div>
+    </div>
+    <div style="border-top: 2px solid #e0e0e0; padding-top: 20px; margin-top: 40px; text-align: center; color: #666;">
+        <p><strong>Canvas Design Library</strong> | Created June 13, 2025 | Last updated: June 13, 2025</p>
+        <p>For use in OSU Canvas course development | Components designed for accessibility and consistency</p>
+    </div>
+</div>
