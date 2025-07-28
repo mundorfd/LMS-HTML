@@ -1,0 +1,274 @@
+<div style="width: 98%; max-width: 1000px; margin-bottom: 24px;">
+    <div style="border-bottom: 3px solid #dc4405; padding-bottom: 20px; margin-bottom: 30px;">
+        <h2 style="color: #666; margin: 10px 0 0 0; font-size: 16pt;">Pill Navigation & Tag Components</h2>
+        <p style="margin: 10px 0 0 0; color: #555;">Horizontal navigation elements and content tags using Canvas built-in pill styling</p>
+    </div>
+    <div id="basic-pill-list"
+         style="margin-bottom: 50px; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden;">
+        <div style="background: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e0e0e0;">
+            <h3 style="margin: 0; color: #333;">Basic Pill List</h3>
+            <p style="margin: 5px 0 0 0; color: #666;">Standard horizontal pill layout with Canvas built-in styling</p>
+        </div>
+        <div style="padding: 20px;">
+            <div style="margin-bottom: 25px;">
+                <h4>Preview:</h4>
+                <ul class="pill">
+                    <li><span style="font-size: 18pt;"><a href="#week1"
+                               style="color: #d73f09; text-decoration: none;">Week 1</a></span></li>
+                    <li><span style="font-size: 18pt;">Week 2</span></li>
+                    <li><span style="font-size: 18pt;">Week 3</span></li>
+                    <li><span style="font-size: 18pt;">Week 4</span></li>
+                    <li><span style="font-size: 18pt;">Week 5</span></li>
+                </ul>
+                <p style="margin-top: 2rem;"><strong>Mobile Fallback:</strong> On Canvas mobile app, pills display as a regular unordered list:</p>
+                <ul style="background: #f9f9f9; padding: 1rem; border-radius: 4px;">
+                    <li><a href="#week1"
+                           style="color: #d73f09;">Week 1</a></li>
+                    <li>Week 2</li>
+                    <li>Week 3</li>
+                    <li>Week 4</li>
+                    <li>Week 5</li>
+                </ul>
+            </div>
+            <h4>Ingredients:</h4>
+            <ul>
+                <li><strong>class:</strong> "pill" (Canvas built-in class)</li>
+                <li><strong>semantic structure:</strong> Standard &lt;ul&gt; and &lt;li&gt; elements</li>
+                <li><strong>responsive:</strong> Horizontal on desktop, vertical list on mobile</li>
+                <li><strong>font-size:</strong> 18pt (customizable with span styling)</li>
+                <li><strong>link styling:</strong> Optional - can mix links and plain text</li>
+                <li><strong>color enhancement:</strong> Add OSU brand colors to links</li>
+            </ul>
+            <h4>HTML/CSS Code:</h4>
+            <pre style="background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 4px; padding: 15px; font-family: 'Courier New', monospace; font-size: 12px; overflow-x: auto; white-space: pre-wrap; margin: 10px 0;">&lt;ul class="pill"&gt;
+    &lt;li&gt;&lt;span style="font-size: 18pt;"&gt;&lt;a href="your-link" style="color: #d73f09; text-decoration: none;"&gt;Linked Item&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;span style="font-size: 18pt;"&gt;Plain Text Item&lt;/span&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;span style="font-size: 18pt;"&gt;Another Item&lt;/span&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;span style="font-size: 18pt;"&gt;Final Item&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;</pre>
+            <h4>Suggested Uses:</h4>
+            <ul>
+                <li>Course module and week navigation</li>
+                <li>Chapter or unit selection</li>
+                <li>Assignment category organization</li>
+                <li>Course section quick links</li>
+                <li>Topic overview navigation</li>
+            </ul>
+            <div style="background: #fff3cd; border: 1px solid #ffeaa7; border-radius: 4px; padding: 10px; margin: 15px 0; font-size: 12px;"><strong>Canvas Class:</strong> Uses Canvas built-in "pill" class for consistent styling across the platform<br /><strong>Date Created:</strong> July 17, 2025</div>
+        </div>
+    </div>
+    <div id="font-size-variations"
+         style="margin-bottom: 50px; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden;">
+        <div style="background: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e0e0e0;">
+            <h3 style="margin: 0; color: #333;">Font Size Variations</h3>
+            <p style="margin: 5px 0 0 0; color: #666;">Different sizing options for various content hierarchies and use cases</p>
+        </div>
+        <div style="padding: 20px;">
+            <div style="margin-bottom: 25px;">
+                <h4>Preview:</h4>
+                <h5>Large (18pt) - Primary Navigation:</h5>
+                <ul class="pill"
+                    style="margin-bottom: 2rem;">
+                    <li><span style="font-size: 18pt;"><a href="#"
+                               style="color: #d73f09; text-decoration: none;">Introduction</a></span></li>
+                    <li><span style="font-size: 18pt;">Fundamentals</span></li>
+                    <li><span style="font-size: 18pt;">Applications</span></li>
+                    <li><span style="font-size: 18pt;">Assessment</span></li>
+                </ul>
+                <h5>Medium (16pt) - Secondary Navigation:</h5>
+                <ul class="pill"
+                    style="margin-bottom: 2rem;">
+                    <li><span style="font-size: 16pt;"><a href="#"
+                               style="color: #4A773C; text-decoration: none;">Lesson 1</a></span></li>
+                    <li><span style="font-size: 16pt;">Lesson 2</span></li>
+                    <li><span style="font-size: 16pt;">Lesson 3</span></li>
+                    <li><span style="font-size: 16pt;">Lesson 4</span></li>
+                    <li><span style="font-size: 16pt;">Lesson 5</span></li>
+                </ul>
+                <h5>Small (14pt) - Tags and Categories:</h5>
+                <ul class="pill"
+                    style="margin-bottom: 2rem;">
+                    <li><span style="font-size: 14pt; color: #003b5c;">Theory</span></li>
+                    <li><span style="font-size: 14pt; color: #003b5c;">Practice</span></li>
+                    <li><span style="font-size: 14pt; color: #003b5c;">Research</span></li>
+                    <li><span style="font-size: 14pt; color: #003b5c;">Discussion</span></li>
+                    <li><span style="font-size: 14pt; color: #003b5c;">Reflection</span></li>
+                </ul>
+            </div>
+            <h4>Size Guidelines:</h4>
+            <ul>
+                <li><strong>18pt:</strong> Primary course navigation, main modules</li>
+                <li><strong>16pt:</strong> Secondary navigation, lesson sections</li>
+                <li><strong>14pt:</strong> Content tags, categories, small groupings</li>
+                <li><strong>12pt:</strong> Minimal use - very fine categorization only</li>
+            </ul>
+            <h4>Code Templates:</h4>
+            <pre style="background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 4px; padding: 15px; font-family: 'Courier New', monospace; font-size: 12px; overflow-x: auto; white-space: pre-wrap; margin: 10px 0;">&lt;!-- Large (18pt) - Primary Navigation --&gt;
+&lt;ul class="pill"&gt;
+    &lt;li&gt;&lt;span style="font-size: 18pt;"&gt;Item&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- Medium (16pt) - Secondary Navigation --&gt;
+&lt;ul class="pill"&gt;
+    &lt;li&gt;&lt;span style="font-size: 16pt;"&gt;Item&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- Small (14pt) - Tags and Categories --&gt;
+&lt;ul class="pill"&gt;
+    &lt;li&gt;&lt;span style="font-size: 14pt;"&gt;Item&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;</pre>
+            <h4>Suggested Uses by Size:</h4>
+            <ul>
+                <li><strong>18pt:</strong> Course overview, major unit navigation</li>
+                <li><strong>16pt:</strong> Weekly navigation, chapter selection</li>
+                <li><strong>14pt:</strong> Assignment types, content categories</li>
+            </ul>
+            <div style="background: #fff3cd; border: 1px solid #ffeaa7; border-radius: 4px; padding: 10px; margin: 15px 0; font-size: 12px;"><strong>Date Created:</strong> July 17, 2025</div>
+        </div>
+    </div>
+    <div id="color-enhanced-pills"
+         style="margin-bottom: 50px; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden;">
+        <div style="background: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e0e0e0;">
+            <h3 style="margin: 0; color: #333;">Color-Enhanced Pills</h3>
+            <p style="margin: 5px 0 0 0; color: #666;">OSU brand color integration for links and content categorization</p>
+        </div>
+        <div style="padding: 20px;">
+            <div style="margin-bottom: 25px;">
+                <h4>Preview:</h4>
+                <h5>Beaver Orange Links - Primary Actions:</h5>
+                <ul class="pill"
+                    style="margin-bottom: 2rem;">
+                    <li><span style="font-size: 16pt;"><a href="#"
+                               style="color: #d73f09; text-decoration: none;">Submit Assignment</a></span></li>
+                    <li><span style="font-size: 16pt;"><a href="#"
+                               style="color: #d73f09; text-decoration: none;">View Rubric</a></span></li>
+                    <li><span style="font-size: 16pt;"><a href="#"
+                               style="color: #d73f09; text-decoration: none;">Download Resources</a></span></li>
+                </ul>
+                <h5>Pine Stand Green Links - Secondary Actions:</h5>
+                <ul class="pill"
+                    style="margin-bottom: 2rem;">
+                    <li><span style="font-size: 16pt;"><a href="#"
+                               style="color: #4A773C; text-decoration: none;">Examples</a></span></li>
+                    <li><span style="font-size: 16pt;"><a href="#"
+                               style="color: #4A773C; text-decoration: none;">Tutorials</a></span></li>
+                    <li><span style="font-size: 16pt;"><a href="#"
+                               style="color: #4A773C; text-decoration: none;">Best Practices</a></span></li>
+                </ul>
+                <h5>Star Canvas Blue - Information Categories:</h5>
+                <ul class="pill"
+                    style="margin-bottom: 2rem;">
+                    <li><span style="font-size: 14pt; color: #003b5c; font-weight: bold;">Required Reading</span></li>
+                    <li><span style="font-size: 14pt; color: #003b5c; font-weight: bold;">Optional Content</span></li>
+                    <li><span style="font-size: 14pt; color: #003b5c; font-weight: bold;">Supplementary</span></li>
+                </ul>
+                <h5>Mixed Content - Links and Labels:</h5>
+                <ul class="pill"
+                    style="margin-bottom: 2rem;">
+                    <li><span style="font-size: 16pt;"><a href="#"
+                               style="color: #d73f09; text-decoration: none;">Module 1</a></span></li>
+                    <li><span style="font-size: 16pt; color: #666;">Module 2</span></li>
+                    <li><span style="font-size: 16pt; color: #666;">Module 3</span></li>
+                    <li><span style="font-size: 16pt; color: #666;">Module 4</span></li>
+                </ul>
+            </div>
+            <h4>Color Usage Guide:</h4>
+            <ul>
+                <li><strong>Beaver Orange (#d73f09):</strong> Primary links, main actions, current/active items</li>
+                <li><strong>Pine Stand Green (#4A773C):</strong> Secondary links, resources, examples</li>
+                <li><strong>Star Canvas Blue (#003b5c):</strong> Information categories, labels, metadata</li>
+                <li><strong>Stratosphere Blue (#006A8E):</strong> Process steps, workflows</li>
+                <li><strong>Gray (#666):</strong> Inactive or future items</li>
+            </ul>
+            <h4>Code Templates:</h4>
+            <pre style="background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 4px; padding: 15px; font-family: 'Courier New', monospace; font-size: 12px; overflow-x: auto; white-space: pre-wrap; margin: 10px 0;">&lt;!-- Colored Links --&gt;
+&lt;li&gt;&lt;span style="font-size: 16pt;"&gt;&lt;a href="your-link" style="color: #d73f09; text-decoration: none;"&gt;Primary Link&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span style="font-size: 16pt;"&gt;&lt;a href="your-link" style="color: #4A773C; text-decoration: none;"&gt;Secondary Link&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+
+&lt;!-- Colored Text Labels --&gt;
+&lt;li&gt;&lt;span style="font-size: 14pt; color: #003b5c; font-weight: bold;"&gt;Category Label&lt;/span&gt;&lt;/li&gt;
+
+&lt;!-- Inactive/Future Items --&gt;
+&lt;li&gt;&lt;span style="font-size: 16pt; color: #666;"&gt;Coming Soon&lt;/span&gt;&lt;/li&gt;</pre>
+            <h4>Suggested Uses:</h4>
+            <ul>
+                <li>Color-coded course navigation by content type</li>
+                <li>Progress indication (active vs. inactive items)</li>
+                <li>Action vs. information distinction</li>
+                <li>Content categorization and tagging</li>
+                <li>Visual hierarchy in complex navigation</li>
+            </ul>
+            <div style="background: #fff3cd; border: 1px solid #ffeaa7; border-radius: 4px; padding: 10px; margin: 15px 0; font-size: 12px;"><strong>Accessibility Note:</strong> Color coding is supplemented with clear text labels and link styling to ensure accessibility compliance<br /><strong>Date Created:</strong> July 17, 2025</div>
+        </div>
+    </div>
+    <div id="specialized-pill-applications"
+         style="margin-bottom: 50px; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden;">
+        <div style="background: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e0e0e0;">
+            <h3 style="margin: 0; color: #333;">Specialized Applications</h3>
+            <p style="margin: 5px 0 0 0; color: #666;">Real-world examples for specific course content and navigation needs</p>
+        </div>
+        <div style="padding: 20px;">
+            <div style="margin-bottom: 25px;">
+                <h4>Preview:</h4>
+                <h5>Course Timeline Navigation:</h5>
+                <ul class="pill"
+                    style="margin-bottom: 2rem;">
+                    <li><span style="font-size: 16pt;"><a href="#"
+                               style="color: #d73f09; text-decoration: none;">Week 1: Introduction</a></span></li>
+                    <li><span style="font-size: 16pt; color: #666;">Week 2: Fundamentals</span></li>
+                    <li><span style="font-size: 16pt; color: #666;">Week 3: Applications</span></li>
+                    <li><span style="font-size: 16pt; color: #666;">Week 4: Project</span></li>
+                </ul>
+                <h5>Assignment Categories:</h5>
+                <ul class="pill"
+                    style="margin-bottom: 2rem;">
+                    <li><span style="font-size: 14pt; color: #d73f09; font-weight: bold;">Essays</span></li>
+                    <li><span style="font-size: 14pt; color: #4A773C; font-weight: bold;">Labs</span></li>
+                    <li><span style="font-size: 14pt; color: #003b5c; font-weight: bold;">Discussions</span></li>
+                    <li><span style="font-size: 14pt; color: #006A8E; font-weight: bold;">Quizzes</span></li>
+                </ul>
+                <h5>Resource Quick Links:</h5>
+                <ul class="pill"
+                    style="margin-bottom: 2rem;">
+                    <li><span style="font-size: 14pt;"><a href="#"
+                               style="color: #4A773C; text-decoration: none;">Course Syllabus</a></span></li>
+                    <li><span style="font-size: 14pt;"><a href="#"
+                               style="color: #4A773C; text-decoration: none;">Reading List</a></span></li>
+                    <li><span style="font-size: 14pt;"><a href="#"
+                               style="color: #4A773C; text-decoration: none;">Office Hours</a></span></li>
+                    <li><span style="font-size: 14pt;"><a href="#"
+                               style="color: #4A773C; text-decoration: none;">Help Desk</a></span></li>
+                </ul>
+                <h5>Learning Objectives Tags:</h5>
+                <ul class="pill"
+                    style="margin-bottom: 2rem;">
+                    <li><span style="font-size: 12pt; color: #666; font-style: italic;">Analyze</span></li>
+                    <li><span style="font-size: 12pt; color: #666; font-style: italic;">Synthesize</span></li>
+                    <li><span style="font-size: 12pt; color: #666; font-style: italic;">Evaluate</span></li>
+                    <li><span style="font-size: 12pt; color: #666; font-style: italic;">Create</span></li>
+                </ul>
+            </div>
+            <h4>Application Guidelines:</h4>
+            <ul>
+                <li><strong>Course Navigation:</strong> Use larger fonts (16-18pt) with primary colors for active sections</li>
+                <li><strong>Content Categories:</strong> Medium fonts (14pt) with different colors for each category type</li>
+                <li><strong>Resource Links:</strong> Consistent secondary color (Green) for all external/support links</li>
+                <li><strong>Metadata Tags:</strong> Smaller fonts (12pt) with muted colors for learning objectives, difficulty levels</li>
+                <li><strong>Progress Indication:</strong> Use color intensity to show completed vs. upcoming content</li>
+            </ul>
+            <h4>Best Practices:</h4>
+            <ul>
+                <li><strong>Limit Items:</strong> Keep 3-7 items per pill list for optimal usability</li>
+                <li><strong>Consistent Spacing:</strong> Use uniform font sizes within each navigation level</li>
+                <li><strong>Clear Labeling:</strong> Make link text descriptive and action-oriented</li>
+                <li><strong>Mobile Testing:</strong> Remember pills become vertical lists on mobile devices</li>
+                <li><strong>Color Meaning:</strong> Establish and maintain consistent color meanings across the course</li>
+            </ul>
+            <div style="background: #fff3cd; border: 1px solid #ffeaa7; border-radius: 4px; padding: 10px; margin: 15px 0; font-size: 12px;"><strong>Usage Tip:</strong> Pills work best for horizontal navigation and tagging. For complex multi-level navigation, combine with other components like your existing card layouts or definition lists<br /><strong>Date Created:</strong> July 17, 2025</div>
+        </div>
+    </div>
+    <div style="border-top: 2px solid #e0e0e0; padding-top: 20px; margin-top: 40px; text-align: center; color: #666;">
+        <p><strong>Canvas Design Library</strong> | Created July 17, 2025 | Last updated: July 17, 2025</p>
+        <p>For use in OSU Canvas course development | Components designed for accessibility and consistency</p>
+    </div>
+</div>

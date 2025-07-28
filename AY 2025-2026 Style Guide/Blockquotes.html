@@ -1,0 +1,211 @@
+<div style="width: 98%; max-width: 1000px; margin-bottom: 24px;">
+    <div style="border-bottom: 3px solid #dc4405; padding-bottom: 20px; margin-bottom: 30px;">
+        <h2 style="color: #666; margin: 10px 0 0 0; font-size: 16pt;">Blockquotes & Pull Quotes Components</h2>
+        <p style="margin: 10px 0 0 0; color: #555;">Styled quote containers for testimonials, expert opinions, and highlighted content</p>
+    </div>
+    <div id="enhanced-blockquote"
+         style="margin-bottom: 50px; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden;">
+        <div style="background: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e0e0e0;">
+            <h3 style="margin: 0; color: #333;">Enhanced Blockquote</h3>
+            <p style="margin: 5px 0 0 0; color: #666;">Decorative blockquote with large quotation marks and centered text</p>
+        </div>
+        <div style="padding: 20px;">
+            <div style="margin-bottom: 25px;">
+                <h4>Preview:</h4>
+                <div style="padding: 60px 80px 40px; position: relative; border: 1px solid #e6e7e8; border-radius: 8px; margin: 2rem 0;">
+                    <div style="position: absolute; top: 0; font-size: 200px; color: rgba(220, 68, 5, 0.15);"
+                         aria-hidden="true">❝</div>
+                    <blockquote style="margin: 0; text-align: center;">
+                        <p style="font-size: 24px; line-height: 1.4; margin: 0 0 1rem 0; font-style: italic;">This course completely changed how I approach problem-solving. The hands-on projects gave me real-world experience that I use every day in my career.</p>
+                        <cite style="font-size: 16px; color: #666; font-style: normal;">— Sarah Chen, Class of 2023</cite>
+                    </blockquote>
+                </div>
+            </div>
+            <h4>Ingredients:</h4>
+            <ul>
+                <li><strong>container padding:</strong> 60px 80px 40px (generous spacing)</li>
+                <li><strong>position:</strong> relative (for quote mark positioning)</li>
+                <li><strong>quote mark:</strong> ❝ symbol, 200px font size</li>
+                <li><strong>quote mark color:</strong> rgba(220, 68, 5, 0.15) (Beaver Orange at 15% opacity)</li>
+                <li><strong>quote mark position:</strong> absolute, top: 0</li>
+                <li><strong>accessibility:</strong> aria-hidden="true" on decorative quote mark</li>
+                <li><strong>semantic markup:</strong> &lt;blockquote&gt; and &lt;cite&gt; elements</li>
+                <li><strong>quote font-size:</strong> 24px, italic</li>
+                <li><strong>attribution font-size:</strong> 16px, normal style</li>
+                <li><strong>attribution color:</strong> #666 (accessible gray)</li>
+            </ul>
+            <h4>HTML/CSS Code:</h4>
+            <pre style="background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 4px; padding: 15px; font-family: 'Courier New', monospace; font-size: 12px; overflow-x: auto; white-space: pre-wrap; margin: 10px 0;">&lt;div style="padding: 60px 80px 40px; position: relative; border: 1px solid #e6e7e8; border-radius: 8px; margin: 2rem 0;"&gt;
+    &lt;div style="position: absolute; top: 0; font-size: 200px; color: rgba(220, 68, 5, 0.15);" aria-hidden="true"&gt;❝&lt;/div&gt;
+    &lt;blockquote style="margin: 0; text-align: center;"&gt;
+        &lt;p style="font-size: 24px; line-height: 1.4; margin: 0 0 1rem 0; font-style: italic;"&gt;Your inspiring quote or testimonial text goes here.&lt;/p&gt;
+        &lt;cite style="font-size: 16px; color: #666; font-style: normal;"&gt;— Attribution Name, Title&lt;/cite&gt;
+    &lt;/blockquote&gt;
+&lt;/div&gt;</pre>
+            <h4>Suggested Uses:</h4>
+            <ul>
+                <li>Student testimonials and course feedback</li>
+                <li>Expert opinions and industry quotes</li>
+                <li>Mission statements and course philosophies</li>
+                <li>Key research findings and conclusions</li>
+                <li>Inspirational content and motivation</li>
+            </ul>
+            <div style="background: #fff3cd; border: 1px solid #ffeaa7; border-radius: 4px; padding: 10px; margin: 15px 0; font-size: 12px;"><strong>Accessibility Note:</strong> Uses semantic blockquote and cite elements for proper screen reader support<br /><strong>Date Created:</strong> July 17, 2025</div>
+        </div>
+    </div>
+    <div id="simple-attribution-blockquote"
+         style="margin-bottom: 50px; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden;">
+        <div style="background: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e0e0e0;">
+            <h3 style="margin: 0; color: #333;">Simple Attribution Blockquote</h3>
+            <p style="margin: 5px 0 0 0; color: #666;">Clean blockquote with standard formatting and right-aligned attribution</p>
+        </div>
+        <div style="padding: 20px;">
+            <div style="margin-bottom: 25px;">
+                <h4>Preview:</h4>
+                <div style="width: 70%; margin: 2rem 0;">
+                    <blockquote style="border-left: 4px solid #d73f09; padding: 1rem 1.5rem; margin: 0; background: #fafafa; border-radius: 0 6px 6px 0;">
+                        <p style="font-size: 18px; line-height: 1.6; margin: 0 0 1rem 0; font-style: italic;">If one has courage, nothing can dim the light that shines from within. Education is the most powerful tool we can use to illuminate that inner strength.</p>
+                        <cite style="text-align: right; display: block; font-size: 14px; color: #666; font-style: normal;">— Maya Angelou</cite>
+                    </blockquote>
+                </div>
+            </div>
+            <h4>Ingredients:</h4>
+            <ul>
+                <li><strong>border-left:</strong> 4px solid #d73f09 (Beaver Orange accent)</li>
+                <li><strong>padding:</strong> 1rem 1.5rem</li>
+                <li><strong>background:</strong> #fafafa (subtle gray background)</li>
+                <li><strong>border-radius:</strong> 0 6px 6px 0 (rounded right side only)</li>
+                <li><strong>quote font-size:</strong> 18px, italic</li>
+                <li><strong>quote line-height:</strong> 1.6</li>
+                <li><strong>attribution display:</strong> block with right alignment</li>
+                <li><strong>attribution font-size:</strong> 14px</li>
+                <li><strong>semantic markup:</strong> proper blockquote and cite elements</li>
+            </ul>
+            <h4>HTML/CSS Code:</h4>
+            <pre style="background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 4px; padding: 15px; font-family: 'Courier New', monospace; font-size: 12px; overflow-x: auto; white-space: pre-wrap; margin: 10px 0;">&lt;div style="width: 70%; margin: 2rem 0;"&gt;
+    &lt;blockquote style="border-left: 4px solid #d73f09; padding: 1rem 1.5rem; margin: 0; background: #fafafa; border-radius: 0 6px 6px 0;"&gt;
+        &lt;p style="font-size: 18px; line-height: 1.6; margin: 0 0 1rem 0; font-style: italic;"&gt;Your quote text goes here.&lt;/p&gt;
+        &lt;cite style="text-align: right; display: block; font-size: 14px; color: #666; font-style: normal;"&gt;— Author Name&lt;/cite&gt;
+    &lt;/blockquote&gt;
+&lt;/div&gt;</pre>
+            <h4>Suggested Uses:</h4>
+            <ul>
+                <li>Academic quotes from textbooks and research</li>
+                <li>Professional insights and expert opinions</li>
+                <li>Historical quotes and important statements</li>
+                <li>Course introduction quotes</li>
+                <li>Key passages from required readings</li>
+            </ul>
+            <div style="background: #fff3cd; border: 1px solid #ffeaa7; border-radius: 4px; padding: 10px; margin: 15px 0; font-size: 12px;"><strong>Date Created:</strong> July 17, 2025</div>
+        </div>
+    </div>
+    <div id="color-themed-blockquotes"
+         style="margin-bottom: 50px; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden;">
+        <div style="background: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e0e0e0;">
+            <h3 style="margin: 0; color: #333;">Color-Themed Blockquotes</h3>
+            <p style="margin: 5px 0 0 0; color: #666;">OSU brand color variations for different content types and visual coordination</p>
+        </div>
+        <div style="padding: 20px;">
+            <div style="margin-bottom: 25px;">
+                <h4>Preview:</h4>
+                <h5>Pine Stand Green - Student Success Stories:</h5>
+                <div style="width: 70%; margin: 2rem 0;">
+                    <blockquote style="border-left: 4px solid #4A773C; padding: 1rem 1.5rem; margin: 0; background: #fafafa; border-radius: 0 6px 6px 0;">
+                        <p style="font-size: 18px; line-height: 1.6; margin: 0 0 1rem 0; font-style: italic;">The collaborative projects in this course taught me more about teamwork than any job I've had. I still use the communication strategies we learned.</p>
+                        <cite style="text-align: right; display: block; font-size: 14px; color: #666; font-style: normal;">— Alex Rodriguez, Alumni</cite>
+                    </blockquote>
+                </div>
+                <h5>Star Canvas Blue - Technical Insights:</h5>
+                <div style="width: 70%; margin: 2rem 0;">
+                    <blockquote style="border-left: 4px solid #003b5c; padding: 1rem 1.5rem; margin: 0; background: #fafafa; border-radius: 0 6px 6px 0;">
+                        <p style="font-size: 18px; line-height: 1.6; margin: 0 0 1rem 0; font-style: italic;">The best way to learn programming is by doing. Theory without practice is empty; practice without theory is blind.</p>
+                        <cite style="text-align: right; display: block; font-size: 14px; color: #666; font-style: normal;">— Dr. Sarah Kim, Computer Science</cite>
+                    </blockquote>
+                </div>
+                <h5>Stratosphere Blue - Industry Perspectives:</h5>
+                <div style="width: 70%; margin: 2rem 0;">
+                    <blockquote style="border-left: 4px solid #006A8E; padding: 1rem 1.5rem; margin: 0; background: #fafafa; border-radius: 0 6px 6px 0;">
+                        <p style="font-size: 18px; line-height: 1.6; margin: 0 0 1rem 0; font-style: italic;">Innovation distinguishes between a leader and a follower. The future belongs to those who can adapt and learn continuously.</p>
+                        <cite style="text-align: right; display: block; font-size: 14px; color: #666; font-style: normal;">— Maria Santos, Tech Industry Leader</cite>
+                    </blockquote>
+                </div>
+            </div>
+            <h4>Color Usage Guide:</h4>
+            <ul>
+                <li><strong>Beaver Orange (#d73f09):</strong> Key concepts, course philosophy, important insights</li>
+                <li><strong>Pine Stand Green (#4A773C):</strong> Student testimonials, success stories, experiences</li>
+                <li><strong>Star Canvas Blue (#003b5c):</strong> Technical content, academic quotes, research findings</li>
+                <li><strong>Stratosphere Blue (#006A8E):</strong> Industry perspectives, professional insights, career advice</li>
+            </ul>
+            <h4>Code Templates:</h4>
+            <pre style="background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 4px; padding: 15px; font-family: 'Courier New', monospace; font-size: 12px; overflow-x: auto; white-space: pre-wrap; margin: 10px 0;">&lt;!-- Pine Stand Green --&gt;
+&lt;blockquote style="border-left: 4px solid #4A773C; padding: 1rem 1.5rem; margin: 0; background: #fafafa; border-radius: 0 6px 6px 0;"&gt;
+
+&lt;!-- Star Canvas Blue --&gt;
+&lt;blockquote style="border-left: 4px solid #003b5c; padding: 1rem 1.5rem; margin: 0; background: #fafafa; border-radius: 0 6px 6px 0;"&gt;
+
+&lt;!-- Stratosphere Blue --&gt;
+&lt;blockquote style="border-left: 4px solid #006A8E; padding: 1rem 1.5rem; margin: 0; background: #fafafa; border-radius: 0 6px 6px 0;"&gt;</pre>
+            <h4>Suggested Uses:</h4>
+            <ul>
+                <li>Color-coordinate with other course components</li>
+                <li>Category-specific testimonials and feedback</li>
+                <li>Content type organization (student vs. expert vs. industry)</li>
+                <li>Visual hierarchy in complex documents</li>
+                <li>Themed course sections and modules</li>
+            </ul>
+            <div style="background: #fff3cd; border: 1px solid #ffeaa7; border-radius: 4px; padding: 10px; margin: 15px 0; font-size: 12px;"><strong>Date Created:</strong> July 17, 2025</div>
+        </div>
+    </div>
+    <div id="usage-guidelines"
+         style="margin-bottom: 50px; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden;">
+        <div style="background: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e0e0e0;">
+            <h3 style="margin: 0; color: #333;">Usage Guidelines</h3>
+            <p style="margin: 5px 0 0 0; color: #666;">Best practices for implementing blockquotes effectively in course content</p>
+        </div>
+        <div style="padding: 20px;">
+            <h4>When to Use Blockquotes:</h4>
+            <ul>
+                <li><strong>Student Testimonials:</strong> Showcase student experiences and course impact</li>
+                <li><strong>Expert Insights:</strong> Highlight industry leader perspectives and professional advice</li>
+                <li><strong>Academic Citations:</strong> Emphasize key passages from research and required readings</li>
+                <li><strong>Motivational Content:</strong> Inspire students with relevant quotes and philosophies</li>
+                <li><strong>Course Philosophy:</strong> Present mission statements and educational approaches</li>
+            </ul>
+            <h4>Choosing the Right Style:</h4>
+            <ul>
+                <li><strong>Enhanced (decorative):</strong> High-impact testimonials, course highlights, featured content</li>
+                <li><strong>Simple Attribution:</strong> Academic quotes, research citations, standard references</li>
+                <li><strong>Color-themed:</strong> Content categorization, visual coordination with other components</li>
+            </ul>
+            <h4>Attribution Best Practices:</h4>
+            <ul>
+                <li><strong>Proper Credits:</strong> Always include author name, title, and source when possible</li>
+                <li><strong>Consistent Format:</strong> Use em dash (—) followed by name and credentials</li>
+                <li><strong>Permission:</strong> Ensure you have rights to use student testimonials and quotes</li>
+                <li><strong>Accuracy:</strong> Verify quote accuracy and proper attribution</li>
+            </ul>
+            <h4>Accessibility Benefits:</h4>
+            <ul>
+                <li><strong>Semantic Markup:</strong> Proper blockquote and cite elements improve screen reader navigation</li>
+                <li><strong>Visual Hierarchy:</strong> Clear distinction between quoted content and regular text</li>
+                <li><strong>Color Independence:</strong> Border styling provides structure beyond color alone</li>
+                <li><strong>Readable Typography:</strong> Appropriate font sizes and line heights for all content</li>
+            </ul>
+            <h4>Maintenance Tips:</h4>
+            <ul>
+                <li><strong>Quote Symbol:</strong> Use the ❝ (U+275D) character for consistent display across platforms</li>
+                <li><strong>Responsive Design:</strong> Test compact versions on mobile devices</li>
+                <li><strong>Color Coordination:</strong> Match border colors with other course components</li>
+                <li><strong>Content Length:</strong> Keep quotes concise - longer content may need different formatting</li>
+            </ul>
+            <div style="background: #e8f4f8; border-left: 4px solid #007acc; padding: 10px; margin: 15px 0; font-size: 12px;">
+                <strong>Usage Tip:</strong> Use blockquotes sparingly for maximum impact. Too many quotes can diminish their effectiveness. Consider rotating testimonials or featuring different quotes each term to keep content fresh.
+            </div>
+        </div>
+    </div>
+    <div style="border-top: 2px solid #e0e0e0; padding-top: 20px; margin-top: 40px; text-align: center; color: #666;">
+        <p><strong>Canvas Design Library</strong> | Created July 17, 2025 | Last updated: July 17, 2025</p>
+        <p>For use in OSU Canvas course development | Components designed for accessibility and consistency</p>
+    </div>
+</div>
