@@ -156,6 +156,22 @@ Every page ends with this standardized footer:
 - **Subtitle text**: #555 minimum (not #888 or lighter)
 - **Body text**: #666 or darker for sufficient contrast
 
+### Canvas Dark Mode Compatibility
+
+Canvas users can switch between light and dark themes, but custom styling can create accessibility issues in dark mode:
+
+- **Light backgrounds with custom colors**: When you add light background colors (like #fefefe), always enforce dark text by adding `color: #2D3B45;` (Canvas regular text color)
+- **Recommended light background**: Use #fefefe instead of lighter grays - provides optimal contrast with OSU Beaver Orange (#D73F09) links in both light and dark modes
+- **Avoid very light backgrounds**: Colors like #fafbfc, #fcfcfb, or #f8f9fa may not provide adequate contrast with default link colors
+- **Dark backgrounds are safe**: Text boxes with dark backgrounds and light text are not affected by Canvas dark mode changes
+
+**Example of dark mode compatible styling:**
+```css
+background-color: #fefefe; color: #2D3B45;
+```
+
+This ensures text remains readable in both Canvas light and dark themes while maintaining proper contrast ratios.
+
 ### Canvas Compatibility
 
 - **Inline styles only**: No external CSS dependencies

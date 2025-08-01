@@ -97,6 +97,30 @@
             </ul>
         </div>
     </div>
+    <h3 style="font-size: 20pt; margin: 2rem 0; color: #d73f09; border-bottom: 3px solid #D73F09; padding-bottom: 0.5rem; display: inline-block;">Canvas Dark Mode Compatibility</h3>
+    <div style="background: #e8f4f8; border-left: 4px solid #007acc; padding: 15px; margin: 20px 0; font-size: 14px;">
+        <strong>Important:</strong> Canvas users can switch between light and dark themes, but custom styling can create accessibility issues in dark mode.
+    </div>
+    <div style="padding-left: 2rem; border-left: 3px solid #4A773C;">
+        <div style="margin-bottom: 2rem; padding: 1.5rem; background: white; border: 1px solid #e6e7e8; border-radius: 8px;">
+            <h4 style="border-bottom: 1px solid #e6e7e8; font-size: 14pt; margin: 0 0 1rem 0;">Dark Mode Best Practices</h4>
+            <div style="font-size: 14px; line-height: 1.6; color: #333333;">
+                <ul style="margin: 0 0 1rem 0; padding-left: 1.5rem;">
+                    <li><strong>Light backgrounds with custom colors:</strong> When you add light background colors (like #fefefe), always enforce dark text by adding <code style="background: #f5f5f5; padding: 2px 4px; border-radius: 3px;">color: #2D3B45;</code> (Canvas regular text color)</li>
+                    <li><strong>Recommended light background:</strong> Use #fefefe instead of lighter grays - provides optimal contrast with OSU Beaver Orange (#D73F09) links</li>
+                    <li><strong>Avoid very light backgrounds:</strong> Colors like #fafbfc, #fcfcfb, or #f8f9fa may not provide adequate contrast with default link colors</li>
+                    <li><strong>Dark backgrounds are safe:</strong> Text boxes with dark backgrounds and light text are not affected by Canvas dark mode changes</li>
+                </ul>
+            </div>
+            <div style="background: #003b5c; color: white; padding: 1rem; border-radius: 6px; margin-top: 1rem;">
+                <h5 style="font-size: 14px; margin: 0 0 0.5rem 0;"><strong>Example of Dark Mode Compatible Styling:</strong></h5>
+                <div style="font-size: 14px; line-height: 1.6;">
+                    <code style="background: rgba(255,255,255,0.1); padding: 4px 8px; border-radius: 3px; font-family: 'Courier New', monospace;">background-color: #fefefe; color: #2D3B45;</code>
+                    <p style="margin: 0.5rem 0 0 0; font-size: 12px;">This ensures text remains readable in both Canvas light and dark themes while maintaining proper contrast ratios.</p>
+                </div>
+            </div>
+        </div>
+    </div>
     <h3 style="font-size: 20pt; margin: 2rem 0; color: #d73f09; border-bottom: 3px solid #D73F09; padding-bottom: 0.5rem; display: inline-block;">Component Evaluation Framework</h3>
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 20px;">
         <div style="background: white; border: 2px solid #d73f09; padding: 1.5rem; border-radius: 8px;">
