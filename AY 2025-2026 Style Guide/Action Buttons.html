@@ -1,0 +1,171 @@
+<div id="action-buttons"
+     style="margin-bottom: 50px; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden;">
+    <div style="background: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e0e0e0;">
+        <h3 style="margin: 0; color: #333;">Action Buttons</h3>
+        <p style="margin: 5px 0 0 0; color: #666;">Prominent call-to-action buttons for submissions and navigation</p>
+    </div>
+    <div style="padding: 20px;">
+        <div style="margin-bottom: 25px;">
+            <h4>Preview:</h4>
+            <div style="background: white; padding: 20px; border: 1px solid #e0e0e0; border-radius: 4px; text-align: center;">
+                <h5 style="margin-top: 0; color: #333; font-size: 14px;">Canvas Button Classes with Data Attributes</h5>
+                <div style="margin-bottom: 20px;">
+                    <p><a class="btn-large btn"
+                           style="background: #d73f09; color: white; padding: 12px 24px; border-radius: 6px; display: inline-block; font-size: 12pt;"
+                           href="#"
+                           data-course-type="assignments"
+                           data-published="true"
+                           data-api-endpoint="#"
+                           data-api-returntype="Assignment"><strong>Submit Assignment &rarr;</strong></a></p>
+                </div>
+                <div style="margin-bottom: 20px;">
+                    <p><a class="btn-large btn"
+                           style="background: white; color: #d73f09; padding: 12px 24px; border-radius: 6px; display: inline-block; font-size: 12pt; border: 2px solid #d73f09;"
+                           href="#"
+                           data-course-type="discussions"
+                           data-published="true"
+                           data-api-endpoint="#"
+                           data-api-returntype="Discussion"><strong>View Discussion &rarr;</strong></a></p>
+                </div>
+                <div style="margin-bottom: 30px;">
+                    <p><a class="btn-large btn"
+                           style="background: #008096; color: white; padding: 12px 24px; border-radius: 6px; display: inline-block; font-size: 12pt;"
+                           href="#"
+                           data-course-type="files"
+                           data-published="true"
+                           data-api-endpoint="#"
+                           data-api-returntype="Folder"><strong>Access Resources &rarr;</strong></a></p>
+                </div>
+                <h5 style="color: #333; font-size: 14px;">Alternative: Simple Styled Links</h5>
+                <div style="margin-bottom: 20px;">
+                    <p><a style="background: #d73f09; color: white; padding: 12px 24px; border-radius: 6px; display: inline-block; font-size: 12pt; text-decoration: none;"
+                           href="#"><strong>Submit Assignment &rarr;</strong></a></p>
+                </div>
+            </div>
+        </div>
+        <h4>Ingredients:</h4>
+        <h5 style="color: #333; font-size: 14px; margin: 15px 0 10px 0;">Canvas Button Classes with Data Attributes (Recommended)</h5>
+        <ul>
+            <li><strong>Element:</strong> &lt;a&gt; tag with Canvas button classes</li>
+            <li><strong>Classes:</strong> "btn-large btn" (Canvas built-in button styling)</li>
+            <li><strong>Data attributes:</strong> data-course-type, data-published, data-api-endpoint, data-api-returntype</li>
+            <li><strong>Custom colors:</strong> Override with inline styles for OSU branding</li>
+            <li><strong>Arrow:</strong> &rarr; (right arrow character)</li>
+        </ul>
+        <h5 style="color: #333; font-size: 14px; margin: 15px 0 10px 0;">Alternative: Simple Styled Links</h5>
+        <ul>
+            <li><strong>Element:</strong> &lt;a&gt; tag with inline styles only</li>
+            <li><strong>Display:</strong> inline-block</li>
+            <li><strong>Padding:</strong> 12px 24px (vertical, horizontal)</li>
+            <li><strong>Border-radius:</strong> 6px</li>
+            <li><strong>Font-size:</strong> 12pt</li>
+            <li><strong>Font-weight:</strong> bold</li>
+            <li><strong>Text-decoration:</strong> none (removes underline)</li>
+        </ul>
+        <h4>HTML/CSS Code:</h4>
+        <h5 style="color: #333; font-size: 14px; margin: 15px 0 10px 0;">Canvas Button Classes with Data Attributes (Recommended)</h5>
+        <pre style="background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 4px; padding: 15px; font-family: 'Courier New', monospace; font-size: 12px; overflow-x: auto; white-space: pre-wrap; margin: 10px 0;">&lt;!-- Assignment Button (Beaver Orange) --&gt;
+&lt;p&gt;&lt;a class="btn-large btn"
+       style="background: #d73f09; color: white; padding: 12px 24px; border-radius: 6px; display: inline-block; font-size: 12pt;"
+       href="https://canvas.oregonstate.edu/courses/YOUR_COURSE_ID/assignments/YOUR_ASSIGNMENT_ID"
+       data-course-type="assignments"
+       data-published="true"
+       data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/YOUR_COURSE_ID/assignments/YOUR_ASSIGNMENT_ID"
+       data-api-returntype="Assignment"&gt;&lt;strong&gt;Submit Assignment &rarr;&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;!-- Discussion Button (Secondary Style) --&gt;
+&lt;p&gt;&lt;a class="btn-large btn"
+       style="background: white; color: #d73f09; padding: 12px 24px; border-radius: 6px; display: inline-block; font-size: 12pt; border: 2px solid #d73f09;"
+       href="https://canvas.oregonstate.edu/courses/YOUR_COURSE_ID/discussion_topics/YOUR_DISCUSSION_ID"
+       data-course-type="discussions"
+       data-published="true"
+       data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/YOUR_COURSE_ID/discussion_topics/YOUR_DISCUSSION_ID"
+       data-api-returntype="Discussion"&gt;&lt;strong&gt;View Discussion &rarr;&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;!-- Files/Resources Button (Teal) --&gt;
+&lt;p&gt;&lt;a class="btn-large btn"
+       style="background: #008096; color: white; padding: 12px 24px; border-radius: 6px; display: inline-block; font-size: 12pt;"
+       href="https://canvas.oregonstate.edu/courses/YOUR_COURSE_ID/files"
+       data-course-type="files"
+       data-published="true"
+       data-api-endpoint="https://canvas.oregonstate.edu/api/v1/courses/YOUR_COURSE_ID/folders/root"
+       data-api-returntype="Folder"&gt;&lt;strong&gt;Access Resources &rarr;&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;</pre>
+        <h5 style="color: #333; font-size: 14px; margin: 15px 0 10px 0;">Alternative: Simple Styled Links</h5>
+        <pre style="background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 4px; padding: 15px; font-family: 'Courier New', monospace; font-size: 12px; overflow-x: auto; white-space: pre-wrap; margin: 10px 0;">&lt;!-- Primary Button (Beaver Orange) --&gt;
+&lt;p&gt;&lt;a style="background: #d73f09; color: white; padding: 12px 24px; border-radius: 6px; display: inline-block; font-size: 12pt; text-decoration: none; font-weight: bold;" href="YOUR_LINK_HERE"&gt;&lt;strong&gt;Button Text &rarr;&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;!-- Secondary Button (White with Orange Border) --&gt;
+&lt;p&gt;&lt;a style="background: white; color: #d73f09; padding: 12px 24px; border-radius: 6px; display: inline-block; font-size: 12pt; text-decoration: none; font-weight: bold; border: 2px solid #d73f09;" href="YOUR_LINK_HERE"&gt;&lt;strong&gt;Button Text &rarr;&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;!-- Teal Button --&gt;
+&lt;p&gt;&lt;a style="background: #008096; color: white; padding: 12px 24px; border-radius: 6px; display: inline-block; font-size: 12pt; text-decoration: none; font-weight: bold;" href="YOUR_LINK_HERE"&gt;&lt;strong&gt;Button Text &rarr;&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;</pre>
+        <h4>Button Variations:</h4>
+        <ul>
+            <li><strong>Primary (Beaver Orange):</strong> background: #d73f09; color: white</li>
+            <li><strong>Secondary (Outlined):</strong> background: white; color: #d73f09; border: 2px solid #d73f09</li>
+            <li><strong>Teal:</strong> background: #008096; color: white</li>
+            <li><strong>Pine Stand Green:</strong> background: #4A773C; color: white</li>
+            <li><strong>Warning (Bucktooth):</strong> background: #FFB500; color: #2D3B45</li>
+        </ul>
+        <h4>Container Options:</h4>
+        <pre style="background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 4px; padding: 15px; font-family: 'Courier New', monospace; font-size: 12px; overflow-x: auto; white-space: pre-wrap; margin: 10px 0;">&lt;!-- Centered in bordered box --&gt;
+&lt;div style="background: white; border: 3px solid #d73f09; padding: 2rem; margin: 1rem 0; border-radius: 8px; text-align: center;"&gt;
+    &lt;div style="font-size: 16pt; margin-bottom: 1rem; color: #d73f09;"&gt;Section Title&lt;/div&gt;
+    &lt;div style="font-size: 12pt; line-height: 1.6; margin-bottom: 1.5rem; color: #333;"&gt;
+        &lt;p&gt;Description text goes here.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;p&gt;&lt;a style="background: #d73f09; color: white; padding: 12px 24px; border-radius: 6px; display: inline-block; font-size: 12pt; text-decoration: none; font-weight: bold;" href="YOUR_LINK"&gt;&lt;strong&gt;Action Text &rarr;&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;</pre>
+        <h4>Suggested Uses:</h4>
+        <ul>
+            <li>Assignment submission links</li>
+            <li>Discussion board navigation</li>
+            <li>External resource access</li>
+            <li>Quiz and assessment entry points</li>
+            <li>File download prompts</li>
+            <li>Course navigation elements</li>
+        </ul>
+        <h4>Design Guidelines:</h4>
+        <ul>
+            <li><strong>Use Canvas Button classes</strong> for interactive elements (show/hide content, expand sections, etc.)</li>
+            <li><strong>Use styled links</strong> for navigation to Canvas pages, assignments, discussions, and external resources</li>
+            <li><strong>Important:</strong> Canvas Button classes create buttons, not links - they won't navigate to other pages. You can assign the button classes to an anchor tag: <code>a class="btn-large btn"</code></li>
+            <li>Use primary (orange) buttons for main actions</li>
+            <li>Use secondary (outlined) buttons for alternative actions</li>
+            <li>Include directional arrow (&rarr;) for navigation clarity</li>
+            <li>Center buttons in containers for emphasis</li>
+            <li>Maintain consistent padding and sizing</li>
+            <li>Use descriptive, action-oriented text</li>
+        </ul>
+        <h4>Accessibility Features:</h4>
+        <ul>
+            <li>High contrast color combinations (AA 2.1 compliant)</li>
+            <li>Large click target (minimum 44px height)</li>
+            <li>Clear, descriptive link text</li>
+            <li>Keyboard accessible with proper focus states</li>
+            <li>Works with screen readers</li>
+        </ul>
+        <h4>Canvas Integration:</h4>
+        <ul>
+            <li><strong>data-course-type:</strong> "assignments", "discussions", "files", "quizzes", "modules", etc.</li>
+            <li><strong>data-published:</strong> "true" for published content, "false" for unpublished</li>
+            <li><strong>data-api-endpoint:</strong> Full Canvas API URL for the resource</li>
+            <li><strong>data-api-returntype:</strong> "Assignment", "Discussion", "Folder", "Quiz", etc.</li>
+            <li><strong>href:</strong> Direct Canvas URL to the resource (what users will navigate to)</li>
+            <li><strong>Canvas URL patterns:</strong> /courses/ID/assignments/ID, /courses/ID/discussion_topics/ID, /courses/ID/files</li>
+        </ul>
+        <h4>Implementation Steps:</h4>
+        <ol style="background: #f8f9fa; padding: 15px 20px; border-radius: 4px; margin: 15px 0;">
+            <li>In Canvas Rich Content Editor, click the <strong>"HTML Editor"</strong> link (usually in the bottom right)</li>
+            <li>Copy the HTML code from the examples above</li>
+            <li>Paste the code into the HTML editor</li>
+            <li>Replace placeholder URLs and IDs with your actual Canvas resource URLs</li>
+            <li>Switch back to the visual editor and save to see the styled buttons</li>
+        </ol>
+        <div style="background: #fff3cd; border: 1px solid #ffeaa7; border-radius: 4px; padding: 10px; margin: 15px 0; font-size: 12px;"><strong>Canvas Compatibility:</strong> Requires HTML editor access in Canvas Rich Content Editor<br /><strong>Dark Mode:</strong> High contrast maintained in Canvas dark mode<br /><strong>Date Created:</strong> August 28, 2025</div>
+        <h4>Additional Resources:</h4>
+        <ul>
+            <li><a href="https://canvas.instructure.com/styleguide#buttons">Canvas Styleguide: Buttons</a></li>
+        </ul>
+    </div>
+</div>
