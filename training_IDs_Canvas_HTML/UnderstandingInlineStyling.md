@@ -27,7 +27,6 @@ Using the theater metaphor, writing HTML and CSS in **Canvas with inline styles*
 
 ![html_tags](./images/html_tags.png)
 
-
 This approach is less efficient because:
 
 1. **Redundancy**: Every actor (HTML element) has to repeat their costume details, even if several actors wear similar outfits.  
